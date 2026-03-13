@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Crawford Consultancy</title>
+  <meta name="description" content="Get in touch with Crawford Consultancy for HR, payroll and admin support. Book a free call or send a message. Based in Falkirk, serving Central Scotland.">
+  <link rel="canonical" href="https://crawfordconsultancy.co.uk/contact/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Contact | Crawford Consultancy">
+  <meta property="og:url" content="https://crawfordconsultancy.co.uk/contact/">
+  <meta property="og:description" content="Get in touch for HR, payroll and admin support. Book a free call or send a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#1a1f2e;--slate:#2c3347;--mid:#4a5568;--muted:#8896aa;--stone:#c8a96e;--stone-l:#f5efe3;--cream:#faf9f7;--white:#ffffff;--border:#e4e2dc;--r:8px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,31,46,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,169,110,0.2);}
+    .nav-inner{max-width:1120px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+    .logo-mark{width:38px;height:38px;background:var(--stone);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:800;font-size:1.1rem;color:var(--ink);}
+    .logo-text{color:#fff;font-weight:600;font-size:0.95rem;}
+    .logo-text span{color:var(--stone);}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+    .nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.88rem;font-weight:400;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--stone);}
+    .nav-links .has-drop{position:relative;}
+    .nav-links .has-drop:hover .dropdown{opacity:1;pointer-events:auto;transform:translateY(0);}
+    .dropdown{position:absolute;top:100%;left:0;background:var(--ink);border:1px solid rgba(200,169,110,0.25);border-radius:var(--r);min-width:230px;padding:8px 0;margin-top:12px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:all 0.2s;}
+    .dropdown a{display:block;padding:10px 18px;color:rgba(255,255,255,0.8)!important;font-size:0.84rem;}
+    .dropdown a:hover{background:rgba(200,169,110,0.1);color:var(--stone)!important;}
+    .nav-cta{background:var(--stone);color:var(--ink)!important;padding:9px 20px;border-radius:6px;font-weight:600!important;font-size:0.85rem!important;text-decoration:none;}
+    .nav-cta:hover{background:#d4b87a!important;}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);margin:5px 0;border-radius:2px;}
+    @media(max-width:768px){
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--ink);padding:24px;gap:0;border-bottom:1px solid rgba(200,169,110,0.2);}
+      nav.nav-open .nav-links{display:flex;}
+      .nav-links li{width:100%;border-bottom:1px solid rgba(255,255,255,0.08);}
+      .nav-links li:last-child{border-bottom:none;}
+      .nav-links a{display:block;padding:14px 0;}
+      .nav-links .dropdown{position:static;opacity:1;transform:none;margin:0;padding:0 0 0 16px;border:none;min-width:auto;background:transparent;}
+      .nav-links .dropdown a{padding:10px 0;}
+      .hamburger{display:block;}
+      .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+      .hamburger.open span:nth-child(2){opacity:0;}
+      .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    }
+    .hamburger span{transition:transform 0.3s,opacity 0.2s;}
+    .page-hero{background:var(--ink);padding:130px 24px 60px;position:relative;}
+    .page-hero-inner{max-width:1120px;margin:0 auto;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:#fff;margin-bottom:12px;}
+    .page-hero p{font-size:1rem;color:rgba(255,255,255,0.6);font-weight:300;}
+    section{padding:80px 24px;}
+    .section-inner{max-width:1120px;margin:0 auto;}
+    .section-label{display:inline-flex;align-items:center;gap:8px;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--stone);margin-bottom:14px;}
+    .section-label::before{content:'';width:20px;height:2px;background:var(--stone);}
+    h2.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;color:var(--ink);letter-spacing:-0.02em;line-height:1.2;margin-bottom:14px;}
+    .contact{background:var(--white);}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+    @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:40px;}}
+    .contact-info h2{margin-bottom:18px;}
+    .contact-info p{color:var(--mid);font-weight:300;line-height:1.75;margin-bottom:32px;}
+    .contact-detail{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--border);}
+    .contact-detail:last-child{border-bottom:none;}
+    .cd-icon{width:40px;height:40px;border-radius:8px;background:var(--stone-l);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .cd-icon svg{width:18px;height:18px;stroke:var(--stone);}
+    .cd-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);margin-bottom:3px;}
+    .cd-value{font-size:0.92rem;font-weight:500;color:var(--ink);}
+    .cd-value a{color:var(--ink);text-decoration:none;}
+    .cd-value a:hover{color:var(--stone);}
+    .contact-form{background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:40px;}
+    .contact-form h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--ink);margin-bottom:26px;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    @media(max-width:560px){.form-row{grid-template-columns:1fr;}}
+    .form-group{margin-bottom:18px;}
+    .form-group label{display:block;font-size:0.78rem;font-weight:600;color:var(--ink);letter-spacing:0.03em;margin-bottom:7px;text-transform:uppercase;}
+    .form-group input,.form-group select,.form-group textarea{width:100%;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px 16px;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--ink);transition:border-color 0.2s,box-shadow 0.2s;appearance:none;}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--stone);box-shadow:0 0 0 3px rgba(200,169,110,0.15);}
+    .form-group textarea{resize:vertical;min-height:110px;}
+    .form-submit{width:100%;padding:14px;background:var(--stone);color:var(--ink);border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.95rem;cursor:pointer;letter-spacing:0.01em;transition:all 0.2s;}
+    .form-submit:hover{background:#d4b87a;transform:translateY(-1px);}
+    .form-note{font-size:0.76rem;color:var(--muted);text-align:center;margin-top:12px;}
+    footer{background:var(--ink);padding:60px 24px 32px;}
+    .footer-inner{max-width:1120px;margin:0 auto;}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+    @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:32px;}}
+    @media(max-width:560px){.footer-top{grid-template-columns:1fr;}}
+    .footer-brand p{color:rgba(255,255,255,0.4);font-size:0.84rem;font-weight:300;line-height:1.7;margin-top:16px;max-width:280px;}
+    .footer-col h4{color:var(--white);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col li{margin-bottom:10px;}
+    .footer-col a{color:rgba(255,255,255,0.4);font-size:0.84rem;text-decoration:none;font-weight:300;transition:color 0.2s;}
+    .footer-col a:hover{color:var(--stone);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+    .footer-bottom p{color:rgba(255,255,255,0.25);font-size:0.78rem;}
+    .footer-badges{display:flex;gap:10px;}
+    .footer-badge{background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.7rem;padding:4px 10px;border-radius:4px;font-weight:600;}
+    .skip-link{position:absolute;top:-100px;left:0;z-index:1001;padding:12px 24px;background:var(--stone);color:var(--ink);font-weight:600;font-size:0.9rem;text-decoration:none;border-radius:0 0 6px 0;transition:top 0.2s;}
+    .skip-link:focus{top:0;outline:2px solid var(--ink);outline-offset:2px;}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--stone);outline-offset:2px;}
+    .nav-cta:focus-visible{outline-color:var(--ink);}
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="logo-mark">CC</div>
+      <div class="logo-text">Crawford <span>Consultancy</span></div>
+    </a>
+    <ul class="nav-links">
+      <li class="has-drop">
+        <a href="#">Services ▾</a>
+        <div class="dropdown">
+          <a href="/hr-payroll-people-support/">HR, Payroll &amp; People Support</a>
+          <a href="/admin-pa-support/">Admin &amp; PA Support</a>
+        </div>
+      </li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/hr-consultant-falkirk/">Areas Served</a></li>
+      <li><a href="/contact/" class="nav-cta">Book a Free Call</a></li>
+    </ul>
+    <button class="hamburger" id="nav-toggle" aria-label="Toggle menu" type="button"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero" id="main-content">
+  <div class="page-hero-inner">
+    <h1>Contact us</h1>
+    <p>Book a free call or send a message. We'll respond within 1 business day.</p>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's talk about your business</h2>
+        <p>If you need help with HR, payroll, admin or compliance, the first step is simply talking it through. We'll listen, answer your questions, and let you know how we can help.</p>
+        <div class="contact-detail">
+          <div class="cd-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <div><div class="cd-label">Location</div><div class="cd-value">Falkirk, Central Scotland</div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+          <div><div class="cd-label">Email</div><div class="cd-value"><a href="mailto:hello@crawfordconsultancy.co.uk">hello@crawfordconsultancy.co.uk</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><div class="cd-label">Response Time</div><div class="cd-value">Within 1 business day</div></div>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form" action="#" method="get">
+        <h3>Send us a message</h3>
+        <div class="form-row">
+          <div class="form-group"><label for="firstname">First name</label><input id="firstname" name="firstname" type="text" placeholder="Sarah"></div>
+          <div class="form-group"><label for="lastname">Last name</label><input id="lastname" name="lastname" type="text" placeholder="Smith"></div>
+        </div>
+        <div class="form-group"><label for="business">Business name</label><input id="business" name="business" type="text" placeholder="Smith Plumbing Ltd"></div>
+        <div class="form-group"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="sarah@business.co.uk" required></div>
+        <div class="form-group">
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option value="HR & People Support">HR &amp; People Support</option>
+            <option value="Payroll & Pensions">Payroll &amp; Pensions</option>
+            <option value="Compliance & Audits">Compliance &amp; Audits</option>
+            <option value="Admin & PA Support">Admin &amp; PA Support</option>
+            <option value="Not sure">Not sure — just want to chat</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="message">Tell us a bit more</label><textarea id="message" name="message" placeholder="What's going on in your business? We'll get back to you within one working day."></textarea></div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <p class="form-note">Opens your email app to send to hello@crawfordconsultancy.co.uk. We'll respond within 1 business day.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="margin-bottom:4px;"><div class="logo-mark">CC</div><div class="logo-text">Crawford <span>Consultancy</span></div></a>
+        <p>Practical HR, payroll, compliance and admin support for small businesses in Falkirk and across Central Scotland.</p>
+      </div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="/hr-payroll-people-support/">HR &amp; People Support</a></li><li><a href="/hr-payroll-people-support/">Payroll &amp; Pensions</a></li><li><a href="/admin-pa-support/">Admin &amp; PA Support</a></li></ul></div>
+      <div class="footer-col"><h4>Areas</h4><ul><li><a href="/hr-consultant-falkirk/">HR Consultant Falkirk</a></li><li><a href="/about/">About</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="/about/">About Us</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Crawford Consultancy. All rights reserved. Registered in Scotland.</p>
+      <div class="footer-badges"><span class="footer-badge">Falkirk</span><span class="footer-badge">Central Scotland</span></div>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var t=document.getElementById('nav-toggle'),n=document.getElementById('main-nav');
+  if(t&&n){
+    t.addEventListener('click',function(){n.classList.toggle('nav-open');t.classList.toggle('open');t.setAttribute('aria-expanded',n.classList.contains('nav-open'));});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){n.classList.remove('nav-open');t.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+    n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('open');t.setAttribute('aria-expanded','false');});});
+  }
+  var f=document.getElementById('contact-form');
+  if(f)f.addEventListener('submit',function(e){e.preventDefault();var q=f.querySelector('[name="firstname"]'),s=f.querySelector('[name="service"]'),m=f.querySelector('[name="message"]');var subj='Website enquiry'+(q&&q.value?' from '+encodeURIComponent(q.value):'');var body=(s&&s.value?'Service: '+s.value+'\n\n':'')+(m&&m.value?m.value:'');window.location.href='mailto:hello@crawfordconsultancy.co.uk?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);});
+})();
+</script>
+</body>
+</html>

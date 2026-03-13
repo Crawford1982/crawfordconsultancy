@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | Crawford Consultancy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#1a1f2e;--mid:#4a5568;--stone:#c8a96e;--cream:#faf9f7;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:800;margin-bottom:16px;}
+    p{color:var(--mid);font-size:1.1rem;margin-bottom:32px;max-width:400px;}
+    a{display:inline-block;background:var(--stone);color:var(--ink);padding:14px 28px;border-radius:7px;font-weight:600;text-decoration:none;transition:background 0.2s;}
+    a:hover{background:#d4b87a;}
+    .skip-link{position:absolute;top:-100px;left:0;z-index:1001;padding:12px 24px;background:var(--stone);color:var(--ink);font-weight:600;font-size:0.9rem;text-decoration:none;border-radius:0 0 6px 0;transition:top 0.2s;}
+    .skip-link:focus{top:0;outline:2px solid var(--ink);outline-offset:2px;}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--stone);outline-offset:2px;}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="main-content">
+    <h1>Page not found</h1>
+    <p>Sorry, we can't find that page. It may have moved or the link might be wrong.</p>
+    <a href="/">Back to home</a>
+  </div>
+</body>
+</html>

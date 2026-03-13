@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Crawford Consultancy</title>
+  <meta name="description" content="Crawford Consultancy is a Falkirk-based HR and payroll consultancy supporting small businesses across Central Scotland with practical, jargon-free advice.">
+  <link rel="canonical" href="https://crawfordconsultancy.co.uk/about/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#1a1f2e;--mid:#4a5568;--stone:#c8a96e;--stone-l:#f5efe3;--cream:#faf9f7;--white:#ffffff;--border:#e4e2dc;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:16px;scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,31,46,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,169,110,0.2);}
+    .nav-inner{max-width:1120px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+    .logo-mark{width:38px;height:38px;background:var(--stone);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:800;font-size:1.1rem;color:var(--ink);}
+    .logo-text{color:#fff;font-weight:600;font-size:0.95rem;}
+    .logo-text span{color:var(--stone);}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+    .nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.88rem;}
+    .nav-links a:hover{color:var(--stone);}
+    .nav-links .has-drop{position:relative;}
+    .nav-links .has-drop:hover .dropdown{opacity:1;pointer-events:auto;transform:translateY(0);}
+    .dropdown{position:absolute;top:100%;left:0;background:var(--ink);border:1px solid rgba(200,169,110,0.25);border-radius:8px;min-width:230px;padding:8px 0;margin-top:12px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:all 0.2s;}
+    .dropdown a{display:block;padding:10px 18px;color:rgba(255,255,255,0.8)!important;font-size:0.84rem;}
+    .dropdown a:hover{background:rgba(200,169,110,0.1);color:var(--stone)!important;}
+    .nav-cta{background:var(--stone);color:var(--ink)!important;padding:9px 20px;border-radius:6px;font-weight:600!important;font-size:0.85rem!important;text-decoration:none;}
+    .hamburger{display:none;}
+    @media(max-width:768px){.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--ink);padding:24px;gap:0;border-bottom:1px solid rgba(200,169,110,0.2);}
+    nav.nav-open .nav-links{display:flex;}
+    .nav-links li{width:100%;border-bottom:1px solid rgba(255,255,255,0.08);}
+    .nav-links .dropdown{position:static;opacity:1;margin:0;padding:0 0 0 16px;border:none;background:transparent;}
+    .nav-links a{display:block;padding:14px 0;}
+    .hamburger{display:block;background:none;border:none;cursor:pointer;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);margin:5px 0;border-radius:2px;transition:transform 0.3s,opacity 0.2s;}
+    .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .hamburger.open span:nth-child(2){opacity:0;}
+    .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}}
+    .page-hero{background:var(--ink);padding:130px 24px 80px;}
+    .page-hero-inner{max-width:1120px;margin:0 auto;}
+    .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:0.78rem;color:rgba(255,255,255,0.35);}
+    .breadcrumb a{color:rgba(255,255,255,0.4);text-decoration:none;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;color:#fff;margin-bottom:18px;}
+    .page-hero p{font-size:1.05rem;color:rgba(255,255,255,0.55);font-weight:300;max-width:580px;line-height:1.75;}
+    section{padding:80px 24px;}
+    .section-inner{max-width:1120px;margin:0 auto;}
+    .section-label{display:inline-flex;align-items:center;gap:8px;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--stone);margin-bottom:14px;}
+    .section-label::before{content:'';width:20px;height:2px;background:var(--stone);}
+    h2.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;color:var(--ink);margin-bottom:14px;}
+    .prose p{color:var(--mid);font-weight:300;line-height:1.8;margin-bottom:16px;font-size:0.96rem;}
+    .prose strong{color:var(--ink);}
+    .btn-primary{background:var(--stone);color:var(--ink);padding:13px 26px;border-radius:7px;font-weight:600;font-size:0.92rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;margin-top:24px;}
+    .btn-primary:hover{background:#d4b87a;transform:translateY(-1px);}
+    footer{background:var(--ink);padding:60px 24px 32px;}
+    .footer-inner{max-width:1120px;margin:0 auto;}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+    @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;}}
+    @media(max-width:560px){.footer-top{grid-template-columns:1fr;}}
+    .footer-brand p{color:rgba(255,255,255,0.4);font-size:0.84rem;margin-top:16px;}
+    .footer-col h4{color:var(--white);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col a{color:rgba(255,255,255,0.4);font-size:0.84rem;text-decoration:none;}
+    .footer-col a:hover{color:var(--stone);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;}
+    .footer-bottom p{color:rgba(255,255,255,0.25);font-size:0.78rem;}
+    .footer-badges{display:flex;gap:10px;margin-top:12px;}
+    .footer-badge{background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.7rem;padding:4px 10px;border-radius:4px;font-weight:600;}
+    .skip-link{position:absolute;top:-100px;left:0;z-index:1001;padding:12px 24px;background:var(--stone);color:var(--ink);font-weight:600;font-size:0.9rem;text-decoration:none;border-radius:0 0 6px 0;transition:top 0.2s;}
+    .skip-link:focus{top:0;outline:2px solid var(--ink);outline-offset:2px;}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--stone);outline-offset:2px;}
+    .nav-cta:focus-visible{outline-color:var(--ink);}
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><div class="logo-mark">CC</div><div class="logo-text">Crawford <span>Consultancy</span></div></a>
+    <ul class="nav-links">
+      <li class="has-drop"><a href="#">Services ▾</a>
+        <div class="dropdown">
+          <a href="/hr-payroll-people-support/">HR, Payroll &amp; People Support</a>
+          <a href="/admin-pa-support/">Admin &amp; PA Support</a>
+        </div>
+      </li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/hr-consultant-falkirk/">Areas Served</a></li>
+      <li><a href="/contact/" class="nav-cta">Book a Free Call</a></li>
+    </ul>
+    <button class="hamburger" id="nav-toggle" aria-label="Toggle menu" type="button"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a> <span>›</span> <span>About</span></div>
+    <h1>About Crawford Consultancy</h1>
+    <p>Practical HR, payroll and admin support for small businesses in Falkirk and across Central Scotland.</p>
+  </div>
+</div>
+<section style="background:var(--cream);">
+  <div class="section-inner" style="max-width:720px;">
+    <div class="section-label">Who We Are</div>
+    <h2 class="section-title">Local support that fits your business</h2>
+    <div class="prose">
+      <p>Crawford Consultancy is a Falkirk-based consultancy specialising in <strong>HR, payroll, compliance and admin support</strong> for small businesses, sole traders and family-run companies across the Central Belt of Scotland.</p>
+      <p>We understand that small businesses need practical, jargon-free advice — not corporate templates or lengthy contracts. Whether you're taking on your first employee, need help with payroll and pensions, or want someone to keep your people and compliance in order, we're here to help.</p>
+      <p>We offer flexible support: ad-hoc when you need it, monthly retainers, or project-based work. No fixed packages, no long-term commitment required. Get in touch for a free, no-obligation conversation about what you need.</p>
+    </div>
+    <a href="/contact/" class="btn-primary">Book a Free Call →</a>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="margin-bottom:4px;"><div class="logo-mark">CC</div><div class="logo-text">Crawford <span>Consultancy</span></div></a>
+        <p>Practical HR, payroll, compliance and admin support for small businesses in Falkirk and across Central Scotland.</p>
+      </div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="/hr-payroll-people-support/">HR &amp; People Support</a></li><li><a href="/admin-pa-support/">Admin &amp; PA Support</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="/about/">About Us</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Crawford Consultancy. All rights reserved. Registered in Scotland.</p>
+      <div class="footer-badges"><span class="footer-badge">Falkirk</span><span class="footer-badge">Central Scotland</span></div>
+    </div>
+  </div>
+</footer>
+<script>(function(){var t=document.getElementById('nav-toggle'),n=document.getElementById('main-nav');if(t&&n){t.addEventListener('click',function(){n.classList.toggle('nav-open');t.classList.toggle('open');});document.addEventListener('keydown',function(e){if(e.key==='Escape'){n.classList.remove('nav-open');t.classList.remove('open');}});n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('open');});});}})();</script>
+</body>
+</html>
