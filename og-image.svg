@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#2c3347"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#c8a96e;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#c8a96e;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="80" width="56" height="56" rx="8" fill="#c8a96e"/>
+  <text x="80" y="125" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="28" fill="#1a1f2e">CC</text>
+  <text x="80" y="320" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="72" fill="#ffffff" letter-spacing="-0.02em">Crawford Consultancy</text>
+  <line x1="80" y1="355" x2="380" y2="355" stroke="#c8a96e" stroke-width="3" stroke-linecap="round"/>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" font-weight="300" fill="rgba(255,255,255,0.75)">HR, Payroll &amp; Admin Support</text>
+  <text x="80" y="440" font-family="Arial, sans-serif" font-size="22" font-weight="300" fill="rgba(255,255,255,0.5)">Falkirk &amp; Central Scotland</text>
+</svg>
