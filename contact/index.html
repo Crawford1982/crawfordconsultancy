@@ -87,6 +87,10 @@
     .form-submit{width:100%;padding:14px;background:var(--stone);color:var(--ink);border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.95rem;cursor:pointer;letter-spacing:0.01em;transition:all 0.2s;}
     .form-submit:hover{background:#d4b87a;transform:translateY(-1px);}
     .form-note{font-size:0.76rem;color:var(--muted);text-align:center;margin-top:12px;}
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--ink);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.15);font-size:0.9rem;}
+    .cookie-banner.hidden{display:none;}
+    .cookie-banner a{color:var(--stone);}
+    .cookie-banner button{background:var(--stone);color:var(--ink);border:none;padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}
     footer{background:var(--ink);padding:60px 24px 32px;}
     .footer-inner{max-width:1120px;margin:0 auto;}
     .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
@@ -223,5 +227,7 @@
   });
 })();
 </script>
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent"><p style="margin:0;">We use cookies for analytics. <a href="/privacy/">Privacy</a></p><button type="button" id="cookie-accept">Accept</button></div>
+<script>(function(){var COOKIE='cc_analytics',GA_ID='G-EXKS1Y6D2Y';function get(n){var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)'));return m?m[2]:null;}function loadGA(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config',GA_ID);var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);}var banner=document.getElementById('cookie-banner'),btn=document.getElementById('cookie-accept');if(get(COOKIE)){if(banner)banner.classList.add('hidden');loadGA();}else if(btn){btn.addEventListener('click',function(){document.cookie=COOKIE+'=1; path=/; max-age=31536000';if(banner)banner.classList.add('hidden');loadGA();});}})();</script>
 </body>
 </html>

@@ -88,6 +88,10 @@
     .skip-link:focus{top:0;outline:2px solid var(--ink);outline-offset:2px;}
     a:focus-visible,button:focus-visible{outline:2px solid var(--stone);outline-offset:2px;}
     .nav-cta:focus-visible{outline-color:var(--ink);}
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--ink);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.15);font-size:0.9rem;}
+    .cookie-banner.hidden{display:none;}
+    .cookie-banner a{color:var(--stone);}
+    .cookie-banner button{background:var(--stone);color:var(--ink);border:none;padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}
   </style>
 </head>
 <body>
@@ -174,5 +178,7 @@
   </div>
 </footer>
 <script>(function(){var t=document.getElementById('nav-toggle'),n=document.getElementById('main-nav');if(t&&n){t.addEventListener('click',function(){n.classList.toggle('nav-open');t.classList.toggle('open');});document.addEventListener('keydown',function(e){if(e.key==='Escape'){n.classList.remove('nav-open');t.classList.remove('open');}});n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('open');});});}})();</script>
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent"><p style="margin:0;">We use cookies for analytics. <a href="/privacy/">Privacy</a></p><button type="button" id="cookie-accept">Accept</button></div>
+<script>(function(){var COOKIE='cc_analytics',GA_ID='G-EXKS1Y6D2Y';function get(n){var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)'));return m?m[2]:null;}function loadGA(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config',GA_ID);var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);}var banner=document.getElementById('cookie-banner'),btn=document.getElementById('cookie-accept');if(get(COOKIE)){if(banner)banner.classList.add('hidden');loadGA();}else if(btn){btn.addEventListener('click',function(){document.cookie=COOKIE+'=1; path=/; max-age=31536000';if(banner)banner.classList.add('hidden');loadGA();});}})();</script>
 </body>
 </html>
