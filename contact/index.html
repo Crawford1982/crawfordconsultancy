@@ -213,7 +213,14 @@
     n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('open');t.setAttribute('aria-expanded','false');});});
   }
   var f=document.getElementById('contact-form');
-  if(f)f.addEventListener('submit',function(e){e.preventDefault();var q=f.querySelector('[name="firstname"]'),s=f.querySelector('[name="service"]'),m=f.querySelector('[name="message"]');var subj='Website enquiry'+(q&&q.value?' from '+encodeURIComponent(q.value):'');var body=(s&&s.value?'Service: '+s.value+'\n\n':'')+(m&&m.value?m.value:'');window.location.href='mailto:hello@crawfordconsultancy.co.uk?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);});
+  if(f)f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=f.querySelector('[name="firstname"]'),s=f.querySelector('[name="service"]'),m=f.querySelector('[name="message"]');
+    var subj='Website enquiry'+(q&&q.value?' from '+encodeURIComponent(q.value):'');
+    var body=(s&&s.value?'Service: '+s.value+'\n\n':'')+(m&&m.value?m.value:'');
+    f.reset();
+    window.location.href='mailto:hello@crawfordconsultancy.co.uk?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+  });
 })();
 </script>
 </body>

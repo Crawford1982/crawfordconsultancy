@@ -1213,13 +1213,11 @@
     if (f) {
       f.addEventListener('submit', function(e) {
         e.preventDefault();
-        var q = f.querySelector('[name="firstname"]');
-        var s = f.querySelector('[name="service"]');
-        var m = f.querySelector('[name="message"]');
+        var q = f.querySelector('[name="firstname"]'), s = f.querySelector('[name="service"]'), m = f.querySelector('[name="message"]');
         var subj = 'Website enquiry' + (q && q.value ? ' from ' + encodeURIComponent(q.value) : '');
         var body = (s && s.value ? 'Service: ' + s.value + '\n\n' : '') + (m && m.value ? m.value : '');
-        var mailto = 'mailto:hello@crawfordconsultancy.co.uk?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
-        window.location.href = mailto;
+        f.reset();
+        window.location.href = 'mailto:hello@crawfordconsultancy.co.uk?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
       });
     }
   })();
