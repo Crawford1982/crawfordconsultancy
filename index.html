@@ -147,7 +147,7 @@
       overflow-x: hidden;
     }
 
-    /* â”€â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(26,31,46,0.97);
@@ -256,7 +256,7 @@
       .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     }
 
-    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* HERO */
     .hero {
       min-height: 100vh;
       background: var(--ink);
@@ -382,7 +382,7 @@
       .hero-card { display: none; }
     }
 
-    /* â”€â”€â”€ SECTION BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* SECTION BASE */
     section { padding: 90px 24px; }
     .section-inner { max-width: 1120px; margin: 0 auto; }
     .section-label {
@@ -405,7 +405,7 @@
       line-height: 1.7;
     }
 
-    /* â”€â”€â”€ WHY US (STRIP) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* WHY US (STRIP) */
     .why-strip { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .why-grid {
       display: grid; grid-template-columns: repeat(4, 1fr);
@@ -429,7 +429,7 @@
     .why-title { font-weight: 600; font-size: 0.95rem; color: var(--ink); margin-bottom: 8px; }
     .why-desc { font-size: 0.84rem; color: var(--mid); line-height: 1.6; font-weight: 300; }
 
-    /* â”€â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* SERVICES */
     .services { background: var(--cream); }
     .services-header {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -500,7 +500,7 @@
     .service-card-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
     .service-card:hover .service-card-link svg { transform: translateX(4px); }
 
-    /* â”€â”€â”€ LOCATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* LOCATION */
     .location-section { background: var(--white); }
     .location-grid {
       display: grid; grid-template-columns: 1fr 1.2fr;
@@ -536,14 +536,14 @@
       padding: 6px 14px; border-radius: 20px;
       display: flex; align-items: center; gap: 5px;
     }
-    .loc-tag::before { content: 'ðŸ“'; font-size: 0.7rem; }
+    .loc-tag::before { content: '•'; font-size: 0.7rem; }
     .loc-tag.primary { background: var(--stone); color: var(--ink); border-color: var(--stone); font-weight: 600; }
-    .loc-tag.primary::before { content: 'â˜…'; }
+    .loc-tag.primary::before { content: '•'; }
     .location-text h2 { margin-bottom: 18px; }
     .location-text p { color: var(--mid); font-weight: 300; line-height: 1.75; margin-bottom: 16px; font-size: 0.95rem; }
     .location-text strong { color: var(--ink); font-weight: 600; }
 
-    /* â”€â”€â”€ PROCESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* PROCESS */
     .process { background: var(--ink); }
     .process .section-title { color: var(--white); }
     .process .section-sub { color: rgba(255,255,255,0.5); }
@@ -570,7 +570,7 @@
     .step-title { font-size: 1.05rem; font-weight: 600; color: var(--white); margin-bottom: 10px; }
     .step-desc { font-size: 0.86rem; color: rgba(255,255,255,0.45); line-height: 1.7; font-weight: 300; }
 
-    /* â”€â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* FAQ */
     .faq { background: var(--cream); }
     .faq-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -615,7 +615,7 @@
     .faq-cta-box p { color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.7; margin-bottom: 26px; font-weight: 300; }
     .faq-cta-box .btn-primary { width: 100%; justify-content: center; }
 
-    /* â”€â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* CONTACT */
     .contact { background: var(--white); }
     .contact-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -693,7 +693,7 @@
     .form-submit:hover { background: #d4b87a; transform: translateY(-1px); }
     .form-note { font-size: 0.76rem; color: var(--muted); text-align: center; margin-top: 12px; }
 
-    /* â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* FOOTER */
     footer {
       background: var(--ink);
       padding: 60px 24px 32px;
@@ -740,7 +740,7 @@
       font-weight: 600; letter-spacing: 0.04em;
     }
 
-    /* â”€â”€â”€ SKIP LINK & FOCUS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* SKIP LINK & FOCUS */
     .skip-link {
       position: absolute;
       top: -100px;
@@ -768,7 +768,7 @@
     a:focus-visible:not(.skip-link) { outline-color: var(--stone); }
     .nav-cta:focus-visible { outline-color: var(--ink); outline-offset: 2px; }
 
-    /* â”€â”€â”€ UTILS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* UTILS */
     .mt-8 { margin-top: 8px; }
     .mt-16 { margin-top: 16px; }
 
@@ -789,7 +789,7 @@
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- â”€â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- NAV -->
 <nav id="main-nav">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
@@ -798,7 +798,7 @@
     </a>
     <ul class="nav-links">
       <li class="has-drop">
-        <a href="#">Services â–¾</a>
+        <a href="#">Services ▾</a>
         <div class="dropdown">
           <a href="/hr-payroll-people-support/">HR, Payroll &amp; People Support</a>
           <a href="/admin-pa-support/">Admin &amp; PA Support</a>
@@ -896,7 +896,7 @@
   </div>
 </div>
 
-<!-- â”€â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- SERVICES -->
 <section class="services">
   <div class="section-inner">
     <div class="services-header">
@@ -950,7 +950,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€ LOCATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- LOCATION -->
 <section class="location-section">
   <div class="section-inner">
     <div class="location-grid">
@@ -989,7 +989,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€ PROCESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- PROCESS -->
 <section class="process">
   <div class="section-inner">
     <div class="section-label">How It Works</div>
@@ -1015,7 +1015,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- FAQ -->
 <section class="faq">
   <div class="section-inner">
     <div class="faq-grid">
@@ -1085,7 +1085,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="section-inner">
     <div class="contact-grid">
@@ -1133,7 +1133,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
