@@ -1236,7 +1236,30 @@
 (function(){
   var COOKIE = 'cc_analytics', GA_ID = 'G-EXKS1Y6D2Y';
   function get(name){ var m = document.cookie.match(new RegExp('(^| )'+name+'=([^;]+)')); return m ? m[2] : null; }
-  function loadGA(){ window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);} window.gtag=gtag; gtag('js',new Date()); gtag('config',GA_ID); var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID; document.head.appendChild(s); }
+  function loadGA(){
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config',GA_ID,{send_page_view:true});
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
+    document.head.appendChild(s);
+    // Track "Book a Free Call" CTA clicks as key events
+    document.addEventListener('click',function(e){
+      var el=e.target.closest('a');
+      if(!el) return;
+      var href=el.href||'';
+      var text=(el.innerText||el.textContent||'').trim();
+      if(href.indexOf('/contact/')>-1 || text.toLowerCase().indexOf('book a free call')>-1){
+        gtag('event','cta_click',{event_category:'CTA',event_label:text||'Book a Free Call',page:window.location.pathname});
+      }
+      if(href.indexOf('mailto:')===0){
+        gtag('event','email_click',{event_category:'Contact',event_label:href});
+      }
+    });
+  }
   var banner=document.getElementById('cookie-banner'), btn=document.getElementById('cookie-accept');
   if(get(COOKIE)){ if(banner) banner.classList.add('hidden'); loadGA(); }
   else if(btn){ btn.addEventListener('click',function(){ document.cookie=COOKIE+'=1; path=/; max-age=31536000'; if(banner) banner.classList.add('hidden'); loadGA(); }); }
