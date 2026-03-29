@@ -222,6 +222,10 @@
     var q=f.querySelector('[name="firstname"]'),s=f.querySelector('[name="service"]'),m=f.querySelector('[name="message"]');
     var subj='Website enquiry'+(q&&q.value?' from '+encodeURIComponent(q.value):'');
     var body=(s&&s.value?'Service: '+s.value+'\n\n':'')+(m&&m.value?m.value:'');
+    // GA4 form_submit conversion event
+    if(typeof gtag==='function'){
+      gtag('event','form_submit',{event_category:'contact',event_label:s&&s.value?s.value:'general',value:1});
+    }
     f.reset();
     window.location.href='mailto:hello@crawfordconsultancy.co.uk?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
   });
