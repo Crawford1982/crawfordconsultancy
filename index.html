@@ -7,21 +7,36 @@
   <meta name="description" content="HR, payroll &amp; admin support for small businesses in Falkirk, Stirling &amp; Central Scotland. No jargon, no tie-in. One direct contact who knows your business. Book a free call today.">
   <link rel="canonical" href="https://crawfordconsultancy.co.uk/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://crawfordconsultancy.co.uk/">
   <meta property="og:title" content="Crawford Consultancy | HR, Payroll &amp; Admin Support Falkirk">
   <meta property="og:description" content="HR, payroll & admin support for small businesses in Falkirk, Stirling & Central Scotland. No jargon, no tie-in. Book a free call today.">
-  <meta property="og:image" content="https://crawfordconsultancy.co.uk/og-image.svg">
+  <meta property="og:image" content="https://crawfordconsultancy.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://crawfordconsultancy.co.uk/og-image.svg">
+  <meta name="twitter:image" content="https://crawfordconsultancy.co.uk/og-image.png">
 
-  <!-- Local Business Schema (rich local SEO for map pack & search) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Crawford Consultancy",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://crawfordconsultancy.co.uk/#website",
+        "url": "https://crawfordconsultancy.co.uk/",
+        "name": "Crawford Consultancy",
+        "publisher": {"@id": "https://crawfordconsultancy.co.uk/#organization"}
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://crawfordconsultancy.co.uk/#organization",
+        "name": "Crawford Consultancy",
+        "logo": "https://crawfordconsultancy.co.uk/logo.png",
     "description": "Practical HR, payroll, compliance and admin support for small businesses in Falkirk, Stirling, Grangemouth and across Central Scotland. Outsourced HR, payroll management, employment contracts and compliance.",
     "url": "https://crawfordconsultancy.co.uk",
     "email": "hello@crawfordconsultancy.co.uk",
@@ -80,38 +95,6 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Admin and PA support"}}
       ]
     }
-  }
-  </script>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What HR support do you provide for small businesses in Falkirk?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Crawford Consultancy provides outsourced HR support including employment contracts, staff handbooks, HR policies, absence management, disciplinary guidance and day-to-day people advice for small businesses across Falkirk and Central Scotland."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer payroll services for small businesses?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We handle weekly and monthly payroll for small businesses, including pension administration, PAYE, and compliance with HMRC requirements. Accurate, on-time payroll without the overhead of an in-house payroll team."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where does Crawford Consultancy operate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are based in Falkirk and work with small businesses across Falkirk, Grangemouth, Larbert, Stirling, Bo'ness, Stenhousemuir and throughout Central Scotland. We also support clients remotely across the UK."
-        }
       }
     ]
   }
@@ -128,10 +111,21 @@
       --mid:    #4a5568;
       --muted:  #8896aa;
       --stone:  #c8a96e;
+      --stone-bright: #dbb978;
       --stone-l:#f5efe3;
       --cream:  #faf9f7;
       --white:  #ffffff;
       --border: #e4e2dc;
+      --sage:   #3d7a6b;
+      --sage-m: #5a9a88;
+      --sage-l: #e6f2ef;
+      --blue:   #3d6a8a;
+      --blue-l: #e8f1f7;
+      --rose:   #9e6b5c;
+      --rose-l: #f9f0ed;
+      --amber-l:#fbf4e8;
+      --violet: #6b5b8a;
+      --violet-l:#f0ebf8;
       --r:      8px;
     }
 
@@ -164,23 +158,18 @@
       display: flex; align-items: center; gap: 12px;
       text-decoration: none;
     }
-    .logo-mark {
-      width: 38px; height: 38px;
-      background: var(--stone);
-      border-radius: 6px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-weight: 800; font-size: 1.1rem;
-      color: var(--ink);
-      letter-spacing: -0.02em;
+    .logo-img {
+      height: 58px; width: 58px; border-radius: 50%;
+      object-fit: cover; display: block; flex-shrink: 0;
+      box-shadow: 0 0 0 2px rgba(219,185,120,0.9), 0 0 0 5px rgba(200,169,110,0.28), 0 0 22px rgba(200,169,110,0.38), 0 4px 14px rgba(0,0,0,0.45);
+      filter: brightness(1.07) saturate(1.06);
     }
-    .logo-text {
-      color: var(--white);
-      font-weight: 600;
-      font-size: 0.95rem;
-      letter-spacing: 0.01em;
+    nav .nav-logo {
+      padding: 4px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(245,239,227,0.22) 0%, rgba(245,239,227,0.08) 65%, transparent 100%);
+      box-shadow: 0 0 24px rgba(200,169,110,0.18);
     }
-    .logo-text span { color: var(--stone); }
+    nav .nav-logo .logo-img { height: 64px; width: 64px; }
     .nav-links {
       display: flex; align-items: center; gap: 32px;
       list-style: none;
@@ -277,8 +266,10 @@
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(200,169,110,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(44,51,71,0.8) 0%, transparent 60%);
+        radial-gradient(ellipse 75% 60% at 72% 42%, rgba(200,169,110,0.2) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 70% at 8% 75%, rgba(90,154,136,0.16) 0%, transparent 55%),
+        radial-gradient(ellipse 45% 55% at 92% 88%, rgba(61,106,138,0.18) 0%, transparent 50%),
+        radial-gradient(ellipse 35% 45% at 40% 15%, rgba(107,91,138,0.1) 0%, transparent 50%);
     }
     .hero-grid {
       position: absolute; inset: 0; opacity: 0.03;
@@ -312,11 +303,18 @@
       letter-spacing: -0.02em;
     }
     .hero h1 em { color: var(--stone); font-style: normal; }
+    .hero-tagline {
+      font-size: 0.88rem;
+      color: var(--stone);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+    }
     .hero-sub {
       font-size: 1.1rem;
       color: rgba(255,255,255,0.6);
       font-weight: 300;
-      max-width: 520px;
+      max-width: 560px;
       margin-bottom: 38px;
       line-height: 1.7;
     }
@@ -346,13 +344,27 @@
       transition: all 0.2s;
     }
     .btn-ghost:hover { border-color: var(--stone); color: var(--stone); }
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      padding: 14px 28px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-outline:hover { border-color: var(--stone); color: var(--stone); }
 
     .hero-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
       border-radius: 16px;
       padding: 36px;
       backdrop-filter: blur(8px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
     }
     .hero-card-title {
       color: var(--stone);
@@ -400,7 +412,7 @@
       letter-spacing: 0.1em; text-transform: uppercase;
       color: var(--stone); margin-bottom: 14px;
     }
-    .section-label::before { content: ''; width: 20px; height: 2px; background: var(--stone); }
+    .section-label::before { content: ''; width: 20px; height: 2px; background: linear-gradient(90deg, var(--sage-m), var(--stone)); }
     h2.section-title {
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.8rem, 3.5vw, 2.6rem);
@@ -415,20 +427,39 @@
     }
 
     /* WHY US (STRIP) */
-    .why-strip { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .why-strip { background: linear-gradient(90deg, var(--sage-l) 0%, var(--amber-l) 50%, var(--blue-l) 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .why-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
+      display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 0;
     }
-    @media (max-width: 768px) { .why-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .why-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-grid.four-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .why-grid.four-col .why-item {
+      border-right: none;
+      padding: 32px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      border-top-width: 3px;
+    }
+    .why-grid.four-col .why-item:nth-child(1) { border-top-color: var(--sage-m); }
+    .why-grid.four-col .why-item:nth-child(2) { border-top-color: var(--stone); }
+    .why-grid.four-col .why-item:nth-child(3) { border-top-color: var(--blue); }
+    .why-grid.four-col .why-item:nth-child(4) { border-top-color: var(--rose); }
+    .why-grid.four-col .why-item:hover { background: var(--cream); box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+    @media (max-width: 768px) { .why-grid.four-col { grid-template-columns: 1fr; } }
     .why-item {
       padding: 40px 32px;
-      border-right: 1px solid var(--border);
-      transition: background 0.2s;
+      border-right: 1px solid rgba(255,255,255,0.5);
+      transition: background 0.2s, transform 0.2s;
+      background: rgba(255,255,255,0.45);
     }
     .why-item:last-child { border-right: none; }
-    .why-item:hover { background: var(--stone-l); }
+    .why-item:hover { background: rgba(255,255,255,0.85); transform: translateY(-2px); }
     .why-num {
       font-family: 'Playfair Display', serif;
       font-size: 2.2rem; font-weight: 800;
@@ -447,10 +478,18 @@
     }
     @media (max-width: 768px) { .services-header { grid-template-columns: 1fr; gap: 20px; } }
     .services-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 24px;
     }
-    @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } }
+    /* ABOUT */
+    .about { background: var(--sage-l); }
+    .about-text p {
+      color: var(--mid); font-weight: 300;
+      line-height: 1.75; margin-bottom: 16px; font-size: 0.95rem;
+    }
+    .about-text p:last-child { margin-bottom: 0; }
+    .contact-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
     .service-card {
       background: var(--white);
       border: 1px solid var(--border);
@@ -486,6 +525,26 @@
       margin-bottom: 22px;
     }
     .service-card-icon svg { width: 24px; height: 24px; stroke: var(--stone); stroke-width: 1.5; }
+    .services-grid .service-card:nth-child(1) { border-top: 3px solid var(--sage-m); }
+    .services-grid .service-card:nth-child(1) .service-card-icon { background: var(--sage-l); }
+    .services-grid .service-card:nth-child(1) .service-card-icon svg { stroke: var(--sage); }
+    .services-grid .service-card:nth-child(1)::after { background: var(--sage-m); }
+    .services-grid .service-card:nth-child(2) { border-top: 3px solid var(--blue); }
+    .services-grid .service-card:nth-child(2) .service-card-icon { background: var(--blue-l); }
+    .services-grid .service-card:nth-child(2) .service-card-icon svg { stroke: var(--blue); }
+    .services-grid .service-card:nth-child(2)::after { background: var(--blue); }
+    .services-grid .service-card:nth-child(3) { border-top: 3px solid var(--rose); }
+    .services-grid .service-card:nth-child(3) .service-card-icon { background: var(--rose-l); }
+    .services-grid .service-card:nth-child(3) .service-card-icon svg { stroke: var(--rose); }
+    .services-grid .service-card:nth-child(3)::after { background: var(--rose); }
+    .services-grid .service-card:nth-child(4) { border-top: 3px solid var(--violet); }
+    .services-grid .service-card:nth-child(4) .service-card-icon { background: var(--violet-l); }
+    .services-grid .service-card:nth-child(4) .service-card-icon svg { stroke: var(--violet); }
+    .services-grid .service-card:nth-child(4)::after { background: var(--violet); }
+    .services-grid .service-card:nth-child(5) { border-top: 3px solid var(--stone); }
+    .services-grid .service-card:nth-child(5) .service-card-icon { background: var(--amber-l); }
+    .services-grid .service-card:nth-child(5) .service-card-icon svg { stroke: #a07840; }
+    .services-grid .service-card:nth-child(5)::after { background: var(--stone); }
     .service-card-title {
       font-family: 'Playfair Display', serif;
       font-size: 1.3rem; font-weight: 700;
@@ -526,7 +585,9 @@
     .location-map-block::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 30% 50%, rgba(200,169,110,0.12) 0%, transparent 70%);
+      background:
+        radial-gradient(ellipse at 25% 50%, rgba(90,154,136,0.2) 0%, transparent 65%),
+        radial-gradient(ellipse at 80% 30%, rgba(200,169,110,0.15) 0%, transparent 55%);
     }
     .map-title {
       font-family: 'Playfair Display', serif;
@@ -547,13 +608,15 @@
     }
     .loc-tag::before { content: '•'; font-size: 0.7rem; }
     .loc-tag.primary { background: var(--stone); color: var(--ink); border-color: var(--stone); font-weight: 600; }
+    .loc-tag:nth-child(3) { background: rgba(90,154,136,0.15); border-color: rgba(90,154,136,0.35); color: var(--sage-m); }
+    .loc-tag:nth-child(5) { background: rgba(61,106,138,0.12); border-color: rgba(61,106,138,0.3); color: var(--blue); }
     .loc-tag.primary::before { content: '•'; }
     .location-text h2 { margin-bottom: 18px; }
     .location-text p { color: var(--mid); font-weight: 300; line-height: 1.75; margin-bottom: 16px; font-size: 0.95rem; }
     .location-text strong { color: var(--ink); font-weight: 600; }
 
     /* PROCESS */
-    .process { background: var(--ink); }
+    .process { background: linear-gradient(135deg, var(--ink) 0%, #1e3344 45%, #243838 100%); }
     .process .section-title { color: var(--white); }
     .process .section-sub { color: rgba(255,255,255,0.5); }
     .process .section-label { color: var(--stone); }
@@ -573,9 +636,11 @@
     .step-num {
       font-family: 'Playfair Display', serif;
       font-size: 3.5rem; font-weight: 800;
-      color: rgba(200,169,110,0.15);
       line-height: 1; margin-bottom: 16px;
     }
+    .process-step:nth-child(1) .step-num { color: rgba(90,154,136,0.45); }
+    .process-step:nth-child(2) .step-num { color: rgba(200,169,110,0.45); }
+    .process-step:nth-child(3) .step-num { color: rgba(61,106,138,0.5); }
     .step-title { font-size: 1.05rem; font-weight: 600; color: var(--white); margin-bottom: 10px; }
     .step-desc { font-size: 0.86rem; color: rgba(255,255,255,0.45); line-height: 1.7; font-weight: 300; }
 
@@ -625,7 +690,7 @@
     .faq-cta-box .btn-primary { width: 100%; justify-content: center; }
 
     /* CONTACT */
-    .contact { background: var(--white); }
+    .contact { background: var(--blue-l); }
     .contact-grid {
       display: grid; grid-template-columns: 1fr 1fr;
       gap: 80px; align-items: start;
@@ -792,6 +857,9 @@
     .cookie-banner a { color: var(--stone); }
     .cookie-banner button { background: var(--stone); color: var(--ink); border: none; padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 0.88rem; cursor: pointer; }
     .cookie-banner button:hover { background: #d4b87a; }
+    .cookie-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cookie-btn-ghost { background: transparent; color: rgba(255,255,255,0.85); border: 1px solid rgba(255,255,255,0.3); padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 0.88rem; cursor: pointer; }
+    .cookie-btn-ghost:hover { border-color: var(--stone); color: var(--stone); }
   </style>
 </head>
 
@@ -801,23 +869,22 @@
 <!-- NAV -->
 <nav id="main-nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">
-      <div class="logo-mark">CC</div>
-      <div class="logo-text">Crawford <span>Consultancy</span></div>
-    </a>
+    <a href="/" class="nav-logo"><img src="/logo.png" alt="Crawford Consultancy" class="logo-img" width="64" height="64"></a>
     <ul class="nav-links">
-      <li class="has-drop">
-        <a href="#">Services ▾</a>
+      <li class="has-drop"><a href="/services/">Services ▾</a>
         <div class="dropdown">
-          <a href="/hr-payroll-people-support/">HR, Payroll &amp; People Support</a>
-          <a href="/admin-pa-support/">Admin &amp; PA Support</a>
+          <a href="/services/">All Services</a>
+          <a href="/services/#hr-support">HR Support</a>
+          <a href="/services/#payroll">Payroll</a>
+          <a href="/services/#benefits">Benefits</a>
+          <a href="/services/#training">Training</a>
+          <a href="/services/#business-support">Business Support</a>
         </div>
       </li>
       <li><a href="/about/">About</a></li>
       <li><a href="/pricing/">Pricing</a></li>
-      <li><a href="/insights/">Insights</a></li>
-      <li><a href="/hr-consultant-falkirk/">Areas Served</a></li>
-      <li><a href="/contact/" class="nav-cta">Book a Free Call</a></li>
+      <li><a href="/areas-covered/">Areas Covered</a></li>
+      <li><a href="/contact/#book-call" class="nav-cta">Book a Free Call</a></li>
     </ul>
     <button class="hamburger" id="nav-toggle" aria-label="Toggle menu" type="button">
       <span></span><span></span><span></span>
@@ -831,265 +898,242 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-eyebrow">Based in Falkirk &middot; Central Scotland</div>
-      <h1>HR &amp; Payroll Support for <em>Small Businesses</em></h1>
-      <p class="hero-sub">Practical, no-jargon support with HR, payroll, compliance and admin &mdash; so you can focus on running your business, not navigating red tape.</p>
+      <h1>Friendly support for <em>small businesses</em></h1>
+      <p class="hero-tagline">HR | Payroll | Benefits | Training | Business Support</p>
+      <p class="hero-sub">Practical support for small businesses across Falkirk, Stirling and Central Scotland &mdash; whether you need help with HR, payroll, employee benefits, training or the admin side of your business. Flexible support that fits around your business, from one-off help to ongoing monthly support.</p>
       <div class="hero-actions">
-        <a href="/contact/" class="btn-primary">
+        <a href="/contact/#book-call" class="btn-primary">
           Book a Free Call
           <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
-        <a href="/hr-payroll-people-support/" class="btn-ghost">View Services</a>
-      </div>
-      <div class="hero-trust">
-        <div class="trust-stat"><strong>Falkirk</strong><span>Based locally</span></div>
-        <div class="trust-divider"></div>
-        <div class="trust-stat"><strong>SME</strong><span>Specialists</span></div>
-        <div class="trust-divider"></div>
-        <div class="trust-stat"><strong>Flexible</strong><span>No fixed packages</span></div>
+        <a href="/services/" class="btn-ghost">View Services</a>
       </div>
     </div>
     <div class="hero-card">
-      <div class="hero-card-title">What we do</div>
+      <div class="hero-card-title">How I can help</div>
       <div class="service-pill">
         <div class="pill-icon">
           <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         </div>
-        <div><div class="pill-label">HR &amp; People Support</div><div class="pill-sub">Contracts, policies, day-to-day advice</div></div>
+        <div><div class="pill-label">HR Support</div><div class="pill-sub">Recruitment through to day-to-day people management</div></div>
       </div>
       <div class="service-pill">
         <div class="pill-icon">
           <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 19h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         </div>
-        <div><div class="pill-label">Payroll &amp; Pensions</div><div class="pill-sub">Accurate, on-time, fully compliant</div></div>
+        <div><div class="pill-label">Payroll</div><div class="pill-sub">Weekly or monthly processing and payroll admin</div></div>
       </div>
       <div class="service-pill">
         <div class="pill-icon">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
-        <div><div class="pill-label">Compliance &amp; Audits</div><div class="pill-sub">Stay compliant, avoid costly mistakes</div></div>
+        <div><div class="pill-label">Benefits</div><div class="pill-sub">Admin and records for employee benefit schemes</div></div>
+      </div>
+      <div class="service-pill">
+        <div class="pill-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <div><div class="pill-label">Training</div><div class="pill-sub">HR, policy and leadership training support</div></div>
       </div>
       <div class="service-pill">
         <div class="pill-icon">
           <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
         </div>
-        <div><div class="pill-label">Admin &amp; PA Support</div><div class="pill-sub">Inbox, diary, invoicing, systems</div></div>
+        <div><div class="pill-label">Business Support</div><div class="pill-sub">Tenders, admin and business coordination</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY STRIP -->
+<!-- STRIP -->
 <div class="why-strip">
   <div class="section-inner">
     <div class="why-grid">
       <div class="why-item">
-        <div class="why-num">01</div>
-        <div class="why-title">No jargon</div>
-        <div class="why-desc">Plain-English advice you can actually use. No HR-speak, no corporate templates that don't fit.</div>
+        <div class="why-title">Local support</div>
+        <div class="why-desc">Based in Falkirk, working with small businesses across Central Scotland &mdash; on site or remotely.</div>
       </div>
       <div class="why-item">
-        <div class="why-num">02</div>
-        <div class="why-title">Local &amp; personal</div>
-        <div class="why-desc">Based in Falkirk. We understand Central Scotland's small business market because we're part of it.</div>
+        <div class="why-title">Flexible packages</div>
+        <div class="why-desc">Support shaped around what your business actually needs, not a one-size-fits-all package.</div>
       </div>
       <div class="why-item">
-        <div class="why-num">03</div>
-        <div class="why-title">Flexible support</div>
-        <div class="why-desc">No fixed packages. Ad-hoc, monthly, or project-based &mdash; whatever fits your business right now.</div>
-      </div>
-      <div class="why-item">
-        <div class="why-num">04</div>
-        <div class="why-title">Everything under one roof</div>
-        <div class="why-desc">HR, payroll, compliance and admin &mdash; handled together, consistently, by a team that knows your business.</div>
+        <div class="why-title">Ongoing or one-off help</div>
+        <div class="why-desc">From a single piece of work to regular monthly support &mdash; whatever works best for you.</div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- ABOUT -->
+<section class="about">
+  <div class="section-inner">
+    <div class="section-label">About</div>
+    <h2 class="section-title">Support from someone who understands small businesses</h2>
+    <div class="about-text" style="max-width:720px;">
+      <p>Having spent many years working in family businesses and operational roles, I know first-hand how much small business owners have to juggle. When you&rsquo;re wearing lots of hats, it&rsquo;s easy for things to get put off &mdash; but with employment law continuing to change, and the introduction of the Fair Work Agency, it&rsquo;s important to stay on top of the people side of your business.</p>
+      <p>That&rsquo;s where I come in. With a background spanning operations, HR and payroll, I offer flexible, affordable support to help small businesses stay on top of HR, payroll, benefits, training and business admin &mdash; without the cost of employing in-house.</p>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICES -->
-<section class="services">
+<section class="services" id="services">
   <div class="section-inner">
     <div class="services-header">
       <div>
-        <div class="section-label">What We Offer</div>
-        <h2 class="section-title">Practical support for every part of running a small business</h2>
+        <div class="section-label">Services</div>
+        <h2 class="section-title">Support shaped around your business</h2>
       </div>
-      <p class="section-sub">Whether you employ one person or a growing team, we provide the right level of support &mdash; without the overhead of hiring in-house.</p>
+      <p class="section-sub">Support can be one-off, ongoing or project-based &mdash; depending on what your business needs.</p>
     </div>
     <div class="services-grid">
-      <a href="/hr-payroll-people-support/" class="service-card featured">
+      <div class="service-card">
         <div class="service-card-icon">
           <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         </div>
-        <div class="service-card-title">HR, Payroll &amp; People Support</div>
-        <p class="service-card-desc">Expert HR and payroll support without the cost of an in-house team. From employment contracts to day-to-day people decisions.</p>
+        <div class="service-card-title">HR Support</div>
+        <p class="service-card-desc">Practical HR support for every stage of the employee journey &mdash; from recruitment and onboarding to contracts, policies and day-to-day people management.</p>
         <ul class="service-card-list">
-          <li>Outsourced HR support</li>
-          <li>Employment contracts &amp; handbooks</li>
-          <li>Weekly &amp; monthly payroll</li>
-          <li>Performance management &amp; absence</li>
-          <li>Compliance &amp; audits</li>
+          <li>Recruitment and interview support</li>
+          <li>Contracts, policies and handbooks</li>
+          <li>Induction, onboarding and employee paperwork</li>
+          <li>Day-to-day HR support, including absence and employee-related matters</li>
         </ul>
-        <div class="service-card-link">Learn more <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
-      </a>
-      <div style="display:grid;gap:24px;">
-        <a href="/admin-pa-support/" class="service-card">
-          <div class="service-card-icon">
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-          </div>
-          <div class="service-card-title">Admin &amp; PA Support</div>
-          <p class="service-card-desc">Reliable admin and PA support to keep things moving &mdash; from inbox and diary management to invoicing and CRM updates.</p>
-          <ul class="service-card-list">
-            <li>Inbox &amp; diary management</li>
-            <li>Invoicing &amp; CRM updates</li>
-            <li>Document formatting &amp; filing</li>
-            <li>Project &amp; tender admin support</li>
-          </ul>
-          <div class="service-card-link">Learn more <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
-        </a>
-        <a href="/hr-consultant-falkirk/" class="service-card">
-          <div class="service-card-icon">
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          </div>
-          <div class="service-card-title">Local to Falkirk &amp; Central Scotland</div>
-          <p class="service-card-desc">We serve businesses across Falkirk, Stirling, Grangemouth, Larbert, and throughout Central Scotland.</p>
-          <div class="service-card-link">See areas covered <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
-        </a>
+      </div>
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 19h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div class="service-card-title">Payroll</div>
+        <p class="service-card-desc">End-to-end payroll support to help keep everything running smoothly behind the scenes.</p>
+        <ul class="service-card-list">
+          <li>Weekly or monthly payroll processing</li>
+          <li>Timesheets, time and attendance, overtime and commissions</li>
+          <li>Statutory payments, starters, leavers and payroll changes</li>
+          <li>Payroll admin, including change of terms letters and employee paperwork</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="service-card-title">Benefits</div>
+        <p class="service-card-desc">Support with the admin that sits behind employee benefits, helping keep things organised and up to date.</p>
+        <ul class="service-card-list">
+          <li>Benefits administration and employee changes</li>
+          <li>Cycle to work, refer a friend and similar schemes</li>
+          <li>Benefit nominations and employee forms</li>
+          <li>General support with employee benefits and records</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <div class="service-card-title">Training</div>
+        <p class="service-card-desc">Practical training to help managers and teams feel more confident, informed and supported.</p>
+        <ul class="service-card-list">
+          <li>HR and people management training</li>
+          <li>Policy and process-based training</li>
+          <li>Absence, disciplinary and grievance training</li>
+          <li>Leadership training support as your business grows</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <div class="service-card-title">Business Support</div>
+        <p class="service-card-desc">Extra support with the admin and practical side of running a busy business.</p>
+        <ul class="service-card-list">
+          <li>Tender and procurement support</li>
+          <li>General admin support and business coordination</li>
+          <li>Process reviews and improvements</li>
+          <li>Forms, documents and business paperwork</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LOCATION -->
+<!-- WHY US -->
+<section class="why-us" style="background:var(--cream);">
+  <div class="section-inner">
+    <div class="section-label">Why Crawford Consultancy</div>
+    <h2 class="section-title">Why work with Crawford Consultancy?</h2>
+    <p class="section-sub" style="margin-bottom:48px;">Support that works around your business &mdash; practical, flexible and designed to make life a little easier.</p>
+    <div class="why-grid four-col">
+      <div class="why-item">
+        <div class="why-title">Support that flexes with your business</div>
+        <div class="why-desc">Whether you need one-off help, regular monthly support or an extra pair of hands during a busy period, support can be shaped around what works best for your business.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-title">Practical help, not overcomplicated advice</div>
+        <div class="why-desc">I understand the pace of small business life and the many priorities that come with it. My focus is always on giving practical support that feels useful, manageable and worth the investment.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-title">More than one service under one roof</div>
+        <div class="why-desc">From HR and payroll to benefits, training and business support, Crawford Consultancy offers joined-up support across the areas that often overlap in a small business.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-title">Friendly support at an affordable price</div>
+        <div class="why-desc">Support should feel approachable, not overwhelming. I work with small businesses in a way that feels personal, flexible and affordable &mdash; without the cost of employing in-house.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HOW IT WORKS -->
+<section class="process">
+  <div class="section-inner">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Getting started is simple &mdash; and there&rsquo;s no obligation</h2>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-title">Get in touch</div>
+        <div class="step-desc">Give me a call, send an email or fill in the contact form &mdash; whatever feels easiest. We&rsquo;ll have an initial chat about your business, what you need help with and whether I&rsquo;m the right fit to support you.</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-title">Free, no-obligation meeting</div>
+        <div class="step-desc">If it sounds like I can help, I&rsquo;ll arrange to come out and meet you on site to talk things through properly. It&rsquo;s a chance for me to understand your business, what you need support with and how I can help. This meeting is free of charge and there&rsquo;s absolutely no obligation.</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-title">Support shaped around your business</div>
+        <div class="step-desc">If you&rsquo;d like to go ahead, we&rsquo;ll work out the best way forward together &mdash; whether that&rsquo;s one-off help, support with a specific project or ongoing monthly support.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS COVERED -->
 <section class="location-section">
   <div class="section-inner">
     <div class="location-grid">
       <div class="location-map-block">
-        <div class="map-title">Serving Central Scotland</div>
+        <div class="map-title">Areas covered</div>
         <div class="location-tags">
           <div class="loc-tag primary">Falkirk</div>
-          <div class="loc-tag">Grangemouth</div>
           <div class="loc-tag">Stirling</div>
-          <div class="loc-tag">Larbert</div>
-          <div class="loc-tag">Stenhousemuir</div>
-          <div class="loc-tag">Bo'ness</div>
-          <div class="loc-tag">Denny</div>
+          <div class="loc-tag">Grangemouth</div>
           <div class="loc-tag">Bonnybridge</div>
-          <div class="loc-tag">Alloa</div>
-          <div class="loc-tag">Linlithgow</div>
+          <div class="loc-tag">Denny</div>
+          <div class="loc-tag">Larbert</div>
+          <div class="loc-tag">Bo'ness</div>
+          <div class="loc-tag">Dunfermline</div>
+          <div class="loc-tag">Edinburgh</div>
+          <div class="loc-tag">Glasgow</div>
           <div class="loc-tag">Remote UK-wide</div>
         </div>
       </div>
       <div class="location-text">
-        <div class="section-label">Where We Work</div>
-        <h2 class="section-title">HR &amp; Payroll Support in Falkirk &amp; Beyond</h2>
-        <p>Crawford Consultancy is based in <strong>Falkirk</strong> and works with small businesses across the <strong>Central Belt of Scotland</strong>. We understand the local business community and the specific pressures facing SMEs, sole traders and family-run businesses in this area.</p>
-        <p>Whether you need in-person support in Falkirk or Stirling, or prefer to work remotely, we offer flexible arrangements that fit the way your business works. We also support clients across the UK remotely.</p>
-        <a href="/hr-consultant-falkirk/" class="btn-primary" style="margin-top:8px;">
-          Areas We Cover
-          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-        <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--border);">
-        <div class="section-label">April 2026 &mdash; Stay compliant</div>
-          <p style="font-size:0.9rem;color:var(--mid);margin-bottom:12px;">New employment law and payroll changes are here. Read our guides for Falkirk and Scottish employers:</p>
-          <p style="margin:0;"><a href="/uk-employment-law-changes-april-2026-falkirk/" style="color:var(--stone);font-weight:600;text-decoration:none;">UK Employment Law Changes April 2026</a> &middot; <a href="/uk-payroll-updates-fair-work-agency-2026/" style="color:var(--stone);font-weight:600;text-decoration:none;">Payroll Updates &amp; the Fair Work Agency</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="process">
-  <div class="section-inner">
-    <div class="section-label">How It Works</div>
-    <h2 class="section-title">Simple to get started</h2>
-    <p class="section-sub">No lengthy onboarding. No complicated contracts. Just a conversation to see if we're the right fit.</p>
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <div class="step-title">Book a free call</div>
-        <div class="step-desc">Tell us what you're dealing with &mdash; HR issues, payroll headaches, admin backlog. No commitment, no sales pitch.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <div class="step-title">We agree a plan</div>
-        <div class="step-desc">We'll suggest what support makes sense for your business &mdash; whether that's a one-off project or ongoing help.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <div class="step-title">Support begins</div>
-        <div class="step-desc">Practical, reliable support that fits around how your business already works. Adjusts as your needs change.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <div class="section-inner">
-    <div class="faq-grid">
-      <div>
-        <div class="section-label">Common Questions</div>
-        <h2 class="section-title">Answers to what most small businesses ask us</h2>
-        <div class="faq-list mt-8">
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              Do I need to commit to a long-term contract?
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-            </button>
-            <div class="faq-a">No. We offer flexible arrangements &mdash; ad-hoc support when you need it, monthly packages for consistent help, or project-based support. There's no obligation to commit to anything long-term upfront.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              We only have a few employees. Is it worth getting HR support?
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-            </button>
-            <div class="faq-a">Absolutely. Employment law applies from your first employee. Contracts, policies, and compliance obligations don't scale down just because you're small &mdash; but the risks of getting them wrong are just as real. We work with sole traders taking on their first member of staff right through to growing teams.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              Can you handle our payroll as well as HR?
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-            </button>
-            <div class="faq-a">Yes &mdash; this is one of our key differentiators. Many consultancies handle HR or payroll in isolation. We provide both under one roof, so everything is joined up. Your payroll runs consistently, your policies stay compliant, and you deal with one point of contact.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              Do you work with businesses outside Falkirk?
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-            </button>
-            <div class="faq-a">Yes. We're based in Falkirk and work regularly with businesses across Stirling, Grangemouth, Larbert, Bo'ness and Central Scotland. We also support clients remotely across the UK.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              What's the first step?
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-            </button>
-            <div class="faq-a">Just get in touch. Most conversations start with someone explaining what they're dealing with &mdash; we listen, ask a few questions, and let you know honestly whether we can help and how. No commitment required.</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="faq-cta-box">
-          <h3>Not sure where to start?</h3>
-          <p>That's completely fine &mdash; most people who contact us start exactly there. Book a free 20-minute call and we'll talk through what you're dealing with.</p>
-          <a href="/contact/" class="btn-primary">
-            Book a Free Call
-            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-          <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:rgba(255,255,255,0.3);margin-bottom:12px;">We support businesses with</div>
-            <div style="display:flex;flex-wrap:wrap;gap:8px;">
-              <span style="background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.75rem;padding:4px 10px;border-radius:4px;">HR Advice</span>
-              <span style="background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.75rem;padding:4px 10px;border-radius:4px;">Payroll</span>
-              <span style="background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.75rem;padding:4px 10px;border-radius:4px;">Compliance</span>
-              <span style="background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.75rem;padding:4px 10px;border-radius:4px;">Contracts</span>
-              <span style="background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.75rem;padding:4px 10px;border-radius:4px;">Admin</span>
-              <span style="background:rgba(200,169,110,0.1);border:1px solid rgba(200,169,110,0.2);color:var(--stone);font-size:0.75rem;padding:4px 10px;border-radius:4px;">PA Support</span>
-            </div>
-          </div>
-        </div>
+        <div class="section-label">Areas Covered</div>
+        <h2 class="section-title">Based in Falkirk, supporting businesses across Central Scotland</h2>
+        <p>Crawford Consultancy works with small businesses across Falkirk, Stirling and the wider Central Belt, offering support both on site and remotely.</p>
+        <p>If you&rsquo;d prefer face-to-face support, I&rsquo;m happy to come out to your business. If remote support works better, that&rsquo;s absolutely fine too. Whether you need ongoing monthly support or help with a one-off piece of work, we can find an approach that works for you.</p>
+        <p><strong>Remote support is also available for businesses further afield.</strong></p>
       </div>
     </div>
   </div>
@@ -1101,8 +1145,15 @@
     <div class="contact-grid">
       <div class="contact-info">
         <div class="section-label">Get In Touch</div>
-        <h2 class="section-title">Let's talk about your business</h2>
-        <p>If you need help with HR, payroll, admin or compliance, the first step is simply talking it through. We'll listen, answer your questions, and let you know how we can help.</p>
+        <h2 class="section-title">Need a hand with HR, payroll or business support?</h2>
+        <p>If you think I could help, I&rsquo;d love to hear from you. Whether you need support with something specific or just want to chat through what might be helpful for your business, feel free to get in touch.</p>
+        <div class="contact-actions">
+          <a href="/contact/#book-call" class="btn-primary">
+            Book a Free Call
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="/contact/#send-message" class="btn-outline">Contact Me</a>
+        </div>
         <div class="contact-detail">
           <div class="cd-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
           <div><div class="cd-label">Location</div><div class="cd-value">Falkirk, Central Scotland</div></div>
@@ -1117,7 +1168,7 @@
         </div>
       </div>
       <form id="contact-form" class="contact-form" action="#" method="get">
-        <h3>Send us a message</h3>
+        <h3>Send a message</h3>
         <div class="form-row">
           <div class="form-group"><label for="firstname">First name</label><input id="firstname" name="firstname" type="text" placeholder="Sarah"></div>
           <div class="form-group"><label for="lastname">Last name</label><input id="lastname" name="lastname" type="text" placeholder="Smith"></div>
@@ -1128,10 +1179,11 @@
           <label for="service">What do you need help with?</label>
           <select id="service" name="service">
             <option value="">Select a service...</option>
-            <option value="HR & People Support">HR &amp; People Support</option>
-            <option value="Payroll & Pensions">Payroll &amp; Pensions</option>
-            <option value="Compliance & Audits">Compliance &amp; Audits</option>
-            <option value="Admin & PA Support">Admin &amp; PA Support</option>
+            <option value="HR Support">HR Support</option>
+            <option value="Payroll">Payroll</option>
+            <option value="Benefits">Benefits</option>
+            <option value="Training">Training</option>
+            <option value="Business Support">Business Support</option>
             <option value="Not sure">Not sure &mdash; just want to chat</option>
           </select>
         </div>
@@ -1148,27 +1200,25 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="/" class="nav-logo" style="margin-bottom:4px;">
-          <div class="logo-mark">CC</div>
-          <div class="logo-text">Crawford <span>Consultancy</span></div>
-        </a>
+        <a href="/" class="nav-logo" style="margin-bottom:4px;"><img src="/logo.png" alt="Crawford Consultancy" class="logo-img" width="64" height="64"></a>
         <p>Practical HR, payroll, compliance and admin support for small businesses in Falkirk and across Central Scotland.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="/hr-payroll-people-support/">HR &amp; People Support</a></li>
-          <li><a href="/hr-payroll-people-support/">Payroll &amp; Pensions</a></li>
-          <li><a href="/hr-payroll-people-support/">Compliance &amp; Audits</a></li>
-          <li><a href="/admin-pa-support/">Admin &amp; PA Support</a></li>
+          <li><a href="/services/#hr-support">HR Support</a></li>
+          <li><a href="/services/#payroll">Payroll</a></li>
+          <li><a href="/services/#benefits">Benefits</a></li>
+          <li><a href="/services/#training">Training</a></li>
+          <li><a href="/services/#business-support">Business Support</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Areas</h4>
         <ul>
-          <li><a href="/hr-consultant-falkirk/">HR Consultant Falkirk</a></li>
-          <li><a href="/hr-consultant-stirling/">HR Consultant Stirling</a></li>
+          <li><a href="/areas-covered/">Areas Covered</a></li>
           <li><a href="/payroll-services-falkirk/">Payroll Falkirk</a></li>
+          <li><a href="/hr-consultant-stirling/">HR Stirling</a></li>
           <li><a href="/payroll-services-stirling/">Payroll Stirling</a></li>
           <li><a href="/hr-consultant-grangemouth/">Grangemouth</a></li>
         </ul>
@@ -1178,7 +1228,6 @@
         <ul>
           <li><a href="/about/">About Us</a></li>
           <li><a href="/pricing/">Pricing</a></li>
-          <li><a href="/insights/">Insights</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
         </ul>
@@ -1240,13 +1289,17 @@
   })();
 </script>
 <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
-  <p style="margin:0;">We use cookies for analytics. <a href="/privacy/">Privacy</a></p>
-  <button type="button" id="cookie-accept">Accept</button>
+  <p style="margin:0;">We use optional analytics cookies to understand how the site is used. <a href="/privacy/">Privacy policy</a></p>
+  <div class="cookie-actions">
+    <button type="button" id="cookie-reject" class="cookie-btn-ghost">Essential only</button>
+    <button type="button" id="cookie-accept">Accept analytics</button>
+  </div>
 </div>
 <script>
 (function(){
   var COOKIE = 'cc_analytics', GA_ID = 'G-EXKS1Y6D2Y';
   function get(name){ var m = document.cookie.match(new RegExp('(^| )'+name+'=([^;]+)')); return m ? m[2] : null; }
+  function hide(b){ if(b) b.classList.add('hidden'); }
   function loadGA(){
     window.dataLayer=window.dataLayer||[];
     function gtag(){dataLayer.push(arguments);}
@@ -1257,7 +1310,6 @@
     s.async=true;
     s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
     document.head.appendChild(s);
-    // Track "Book a Free Call" CTA clicks as key events
     document.addEventListener('click',function(e){
       var el=e.target.closest('a');
       if(!el) return;
@@ -1271,9 +1323,14 @@
       }
     });
   }
-  var banner=document.getElementById('cookie-banner'), btn=document.getElementById('cookie-accept');
-  if(get(COOKIE)){ if(banner) banner.classList.add('hidden'); loadGA(); }
-  else if(btn){ btn.addEventListener('click',function(){ document.cookie=COOKIE+'=1; path=/; max-age=31536000'; if(banner) banner.classList.add('hidden'); loadGA(); }); }
+  var banner=document.getElementById('cookie-banner'), accept=document.getElementById('cookie-accept'), reject=document.getElementById('cookie-reject');
+  var choice=get(COOKIE);
+  if(choice==='1'){ hide(banner); loadGA(); }
+  else if(choice==='0'){ hide(banner); }
+  else {
+    if(accept) accept.addEventListener('click',function(){ document.cookie=COOKIE+'=1; path=/; max-age=31536000; SameSite=Lax'; hide(banner); loadGA(); });
+    if(reject) reject.addEventListener('click',function(){ document.cookie=COOKIE+'=0; path=/; max-age=31536000; SameSite=Lax'; hide(banner); });
+  }
 })();
 </script>
 </body>
