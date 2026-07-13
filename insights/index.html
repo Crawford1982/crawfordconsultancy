@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Insights | HR &amp; Employment Law Updates for Scottish Businesses</title>
-  <meta name="description" content="Practical guides on UK employment law and payroll changes for Falkirk, Stirling and Central Scotland. Stay compliant with the latest HR and Fair Work Agency updates.">
+  <title>HR Insights &amp; Guides for Small Businesses | Crawford Consultancy</title>
+  <meta name="description" content="Practical HR guides and employment advice for small businesses in Falkirk, Stirling and Central Scotland. Employee handbooks, policies, payroll and compliance explained plainly.">
   <link rel="canonical" href="https://crawfordconsultancy.co.uk/insights/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta property="og:title" content="Insights | Crawford Consultancy">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Crawford Consultancy Insights",
+    "description": "HR guides and employment advice for small businesses in Falkirk, Stirling and Central Scotland.",
+    "url": "https://crawfordconsultancy.co.uk/insights/",
+    "publisher": {"@id": "https://crawfordconsultancy.co.uk/#organization"}
+  }
+  </script>
+  <meta property="og:title" content="HR Insights &amp; Guides | Crawford Consultancy">
   <meta property="og:url" content="https://crawfordconsultancy.co.uk/insights/">
-  <meta property="og:description" content="HR and employment law updates for Scottish small businesses. Falkirk, Stirling, Central Scotland.">
+  <meta property="og:description" content="Practical HR guides for small businesses in Falkirk, Stirling and Central Scotland.">
   <meta property="og:image" content="https://crawfordconsultancy.co.uk/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -40,7 +49,7 @@
     .nav-cta{background:var(--stone);color:var(--ink)!important;padding:9px 20px;border-radius:6px;font-weight:600!important;font-size:0.85rem!important;text-decoration:none;}
     .nav-cta:hover{background:#d4b87a!important;}
     .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;}
-    .hamburger span{display:block;width:22px;height:2px;background:var(--white);margin:5px 0;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--white);margin:5px 0;transition:transform 0.3s,opacity 0.2s;}
     @media(max-width:768px){.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--ink);padding:24px;gap:0;border-bottom:1px solid rgba(200,169,110,0.2);}
     nav.nav-open .nav-links{display:flex;}
     .nav-links li{width:100%;border-bottom:1px solid rgba(255,255,255,0.08);}
@@ -50,25 +59,38 @@
     .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
     .hamburger.open span:nth-child(2){opacity:0;}
     .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}}
-    .page-hero{background:var(--ink);padding:130px 24px 80px;position:relative;overflow:hidden;}.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 75% 40%,rgba(200,169,110,0.2) 0%,transparent 55%),radial-gradient(ellipse 50% 65% at 10% 80%,rgba(90,154,136,0.15) 0%,transparent 55%);pointer-events:none;}
+    .page-hero{background:var(--ink);padding:130px 24px 80px;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 75% 40%,rgba(200,169,110,0.22) 0%,transparent 55%),radial-gradient(ellipse 50% 65% at 10% 80%,rgba(90,154,136,0.18) 0%,transparent 55%),radial-gradient(ellipse 40% 50% at 90% 90%,rgba(61,106,138,0.18) 0%,transparent 50%);pointer-events:none;}
     .page-hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1;}
     .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:0.78rem;color:rgba(255,255,255,0.35);}
     .breadcrumb a{color:rgba(255,255,255,0.4);text-decoration:none;}
     .breadcrumb a:hover{color:var(--stone);}
+    .section-label{display:inline-flex;align-items:center;gap:8px;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--stone);margin-bottom:14px;}
+    .section-label::before{content:'';width:20px;height:2px;background:linear-gradient(90deg,#5a9a88,var(--stone));}
     .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.75rem);font-weight:800;color:#fff;margin-bottom:12px;}
-    .page-hero p{font-size:1rem;color:rgba(255,255,255,0.5);max-width:560px;}
-    section{padding:60px 24px 80px;}
-    .section-inner{max-width:720px;margin:0 auto;}
-    .insights-list{list-style:none;}
-    .insights-list li{border-bottom:1px solid var(--border);padding:28px 0;}
-    .insights-list li:first-child{padding-top:0;}
-    .insights-list .post-meta{font-size:0.78rem;color:var(--stone);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;}
-    .insights-list .post-title{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;margin-bottom:10px;}
-    .insights-list .post-title a{color:var(--ink);text-decoration:none;}
-    .insights-list .post-title a:hover{color:var(--stone);}
-    .insights-list .post-excerpt{font-size:0.95rem;color:var(--mid);line-height:1.7;margin-bottom:14px;}
-    .insights-list .post-link{font-size:0.88rem;font-weight:600;color:var(--stone);text-decoration:none;}
-    .insights-list .post-link:hover{text-decoration:underline;}
+    .page-hero h1 em{color:var(--stone);font-style:normal;}
+    .page-hero p{font-size:1.05rem;color:rgba(255,255,255,0.5);max-width:620px;line-height:1.75;font-weight:300;}
+    section{padding:60px 24px 80px;background:linear-gradient(180deg,var(--sage-l) 0%,var(--cream) 35%,var(--blue-l) 100%);}
+    .section-inner{max-width:1120px;margin:0 auto;}
+    .topic-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;}
+    .topic-pill{font-size:0.78rem;font-weight:600;padding:8px 14px;border-radius:20px;border:1px solid transparent;}
+    .topic-pill.sage{background:var(--sage-l);color:var(--sage);border-color:rgba(61,122,107,0.2);}
+    .topic-pill.blue{background:var(--blue-l);color:var(--blue);border-color:rgba(61,106,138,0.2);}
+    .topic-pill.amber{background:var(--amber-l);color:#8a6b3d;border-color:rgba(200,169,110,0.35);}
+    .topic-pill.rose{background:var(--rose-l);color:var(--rose);border-color:rgba(158,107,92,0.2);}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px;}
+    .blog-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:0;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s;display:flex;flex-direction:column;overflow:hidden;position:relative;}
+    .blog-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--sage-m),var(--stone),var(--blue));}
+    .blog-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(26,31,46,0.1);border-color:rgba(200,169,110,0.4);}
+    .blog-card-inner{padding:28px;display:flex;flex-direction:column;flex-grow:1;border-left:4px solid var(--sage-m);background:linear-gradient(135deg,rgba(230,242,239,0.45) 0%,var(--white) 55%);}
+    .blog-card .post-meta{font-size:0.72rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;}
+    .blog-card .post-tag{display:inline-block;background:var(--amber-l);color:#7a5f2e;font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:5px 10px;border-radius:20px;margin-bottom:12px;border:1px solid rgba(200,169,110,0.3);}
+    .blog-card h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:12px;line-height:1.3;}
+    .blog-card h2 a{color:var(--ink);text-decoration:none;}
+    .blog-card h2 a:hover{color:var(--sage);}
+    .blog-card .post-excerpt{font-size:0.94rem;color:var(--mid);line-height:1.7;margin-bottom:20px;flex-grow:1;font-weight:300;}
+    .blog-card .post-link{font-size:0.88rem;font-weight:600;color:var(--blue);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+    .blog-card .post-link:hover{color:var(--stone);}
     footer{background:var(--ink);padding:60px 24px 32px;}
     .footer-inner{max-width:1120px;margin:0 auto;}
     .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px;}
@@ -85,7 +107,10 @@
     .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--ink);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.15);font-size:0.9rem;}
     .cookie-banner.hidden{display:none;}
     .cookie-banner a{color:var(--stone);}
-    .cookie-banner button{background:var(--stone);color:var(--ink);border:none;padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}.cookie-actions{display:flex;gap:10px;flex-wrap:wrap;} .cookie-btn-ghost{background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.3);padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;} .cookie-btn-ghost:hover{border-color:var(--stone);color:var(--stone);}
+    .cookie-banner button{background:var(--stone);color:var(--ink);border:none;padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}
+    .cookie-actions{display:flex;gap:10px;flex-wrap:wrap;}
+    .cookie-btn-ghost{background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.3);padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}
+    .cookie-btn-ghost:hover{border-color:var(--stone);color:var(--stone);}
   </style>
 </head>
 <body>
@@ -94,7 +119,7 @@
   <div class="nav-inner">
     <a href="/" class="nav-logo"><img src="/logo.png" alt="Crawford Consultancy" class="logo-img" width="64" height="64"></a>
     <ul class="nav-links">
-            <li class="has-drop"><a href="/services/">Services ▾</a>
+      <li class="has-drop"><a href="/services/">Services ▾</a>
         <div class="dropdown">
           <a href="/services/">All Services</a>
           <a href="/services/#hr-support">HR Support</a>
@@ -106,6 +131,7 @@
       </li>
       <li><a href="/about/">About</a></li>
       <li><a href="/pricing/">Pricing</a></li>
+      <li><a href="/insights/">Insights</a></li>
       <li><a href="/areas-covered/">Areas Covered</a></li>
       <li><a href="/contact/#book-call" class="nav-cta">Book a Free Call</a></li>
     </ul>
@@ -115,28 +141,32 @@
 
 <div class="page-hero" id="main-content">
   <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="/">Home</a> <span>›</span> <span>Insights</span></div>
-    <h1>Insights</h1>
-    <p>HR and employment law updates for small businesses in Falkirk, Stirling and Central Scotland. Stay compliant with the latest changes.</p>
+    <div class="breadcrumb"><a href="/">Home</a> <span>&rsaquo;</span> <span>Insights</span></div>
+    <div class="section-label">HR Insights</div>
+    <h1>Practical HR guides for <em>small businesses</em></h1>
+    <p>Clear, straightforward advice on employment policies, handbooks, payroll and compliance &mdash; written for businesses in Falkirk, Stirling and Central Scotland.</p>
   </div>
 </div>
 
-<section style="background:var(--cream);">
+<section>
   <div class="section-inner">
-    <ul class="insights-list">
-      <li>
-        <div class="post-meta">March 2026 · Employment law</div>
-        <h2 class="post-title"><a href="/uk-employment-law-changes-april-2026-falkirk/">UK Employment Law Changes April 2026: Is Your Business Ready?</a></h2>
-        <p class="post-excerpt">The Employment Rights Act 2025 brings major reforms in April 2026: Day One SSP, Day One paternity and parental leave, and doubled protective awards for collective redundancy failures. What Falkirk and Central Scotland businesses must do now.</p>
-        <a href="/uk-employment-law-changes-april-2026-falkirk/" class="post-link">Read more →</a>
-      </li>
-      <li>
-        <div class="post-meta">March 2026 · Payroll</div>
-        <h2 class="post-title"><a href="/uk-payroll-updates-fair-work-agency-2026/">April 2026 Payroll Updates &amp; The Launch of the Fair Work Agency</a></h2>
-        <p class="post-excerpt">New National Living Wage and NMW rates, the launch of the Fair Work Agency, and strict record-keeping rules. A guide for Scottish employers in Stirling, Falkirk and the Forth Valley.</p>
-        <a href="/uk-payroll-updates-fair-work-agency-2026/" class="post-link">Read more →</a>
-      </li>
-    </ul>
+    <div class="topic-row">
+      <span class="topic-pill sage">HR Policies</span>
+      <span class="topic-pill blue">Employment Law</span>
+      <span class="topic-pill amber">Payroll</span>
+      <span class="topic-pill rose">Small Business</span>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-card-inner">
+        <span class="post-tag">HR Policies</span>
+        <p class="post-meta">13 July 2026</p>
+        <h2><a href="/do-i-need-an-employee-handbook-uk/">Do You Legally Need an Employee Handbook?</a></h2>
+        <p class="post-excerpt">There is no legal requirement in the UK to provide an employee handbook &mdash; but for small businesses, having one is best practice. What to include, why it matters, and how often to review it.</p>
+        <a href="/do-i-need-an-employee-handbook-uk/" class="post-link">Read article &rarr;</a>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -148,9 +178,9 @@
         <p style="color:rgba(255,255,255,0.4);font-size:0.84rem;">HR, payroll and admin support for small businesses in Falkirk and Central Scotland.</p>
       </div>
       <div class="footer-col"><h4>Services</h4><ul><li><a href="/services/#hr-support">HR Support</a></li><li><a href="/services/#payroll">Payroll</a></li><li><a href="/services/#benefits">Benefits</a></li><li><a href="/services/#training">Training</a></li><li><a href="/services/#business-support">Business Support</a></li></ul></div>
-      <div class="footer-col"><h4>Company</h4><ul><li><a href="/about/">About Us</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/areas-covered/">Areas Covered</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy Policy</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="/about/">About Us</a></li><li><a href="/insights/">Insights</a></li><li><a href="/areas-covered/">Areas Covered</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy Policy</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><p>© 2026 Crawford Consultancy. All rights reserved.</p></div>
+    <div class="footer-bottom"><p>&copy; 2026 Crawford Consultancy. All rights reserved.</p></div>
   </div>
 </footer>
 <script>(function(){var t=document.getElementById('nav-toggle'),n=document.getElementById('main-nav');if(t&&n){t.addEventListener('click',function(){n.classList.toggle('nav-open');t.classList.toggle('open');});document.addEventListener('keydown',function(e){if(e.key==='Escape'){n.classList.remove('nav-open');t.classList.remove('open');}});n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('open');});});}})();</script>
