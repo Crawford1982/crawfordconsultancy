@@ -568,6 +568,30 @@
     .service-card-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
     .service-card:hover .service-card-link svg { transform: translateX(4px); }
 
+    /* INSIGHTS PREVIEW */
+    .insights-preview { background: var(--stone-l); }
+    .insights-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 40px;
+    }
+    @media (max-width: 900px) { .insights-grid { grid-template-columns: 1fr; } }
+    .insight-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px 24px 22px;
+      display: flex; flex-direction: column;
+      box-shadow: 0 2px 10px rgba(26,31,46,0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .insight-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(26,31,46,0.08); }
+    .insight-card:nth-child(1) { border-top: 3px solid var(--stone); }
+    .insight-card:nth-child(2) { border-top: 3px solid var(--sage-m); }
+    .insight-card:nth-child(3) { border-top: 3px solid var(--blue); }
+    .insight-meta { font-size: 0.72rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .insight-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); line-height: 1.35; margin-bottom: 10px; }
+    .insight-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.65; font-weight: 300; margin-bottom: 18px; flex-grow: 1; }
+    .insight-link { font-size: 0.84rem; font-weight: 600; color: var(--blue); text-decoration: none; }
+    .insight-link:hover { color: var(--stone); }
+
     /* LOCATION */
     .location-section { background: var(--white); }
     .location-grid {
@@ -1109,6 +1133,36 @@
   </div>
 </section>
 
+<!-- INSIGHTS -->
+<section class="insights-preview">
+  <div class="section-inner">
+    <div class="section-label">Insights</div>
+    <h2 class="section-title">Practical HR &amp; payroll advice for small businesses</h2>
+    <p class="section-sub" style="max-width:640px;color:var(--mid);font-weight:300;line-height:1.75;">Plain-English guides on the employment questions Falkirk and Central Scotland business owners ask most often.</p>
+    <div class="insights-grid">
+      <article class="insight-card">
+        <p class="insight-meta">Payroll · 21 Aug 2026</p>
+        <h3>How Much Does It Really Cost to Employ Someone in the UK?</h3>
+        <p>A £30,000 salary isn&rsquo;t the full picture. Employer NI, pensions, Employment Allowance and hidden costs explained.</p>
+        <a href="/cost-of-employing-someone-uk/" class="insight-link">Read article →</a>
+      </article>
+      <article class="insight-card">
+        <p class="insight-meta">HR Essentials · 16 Aug 2026</p>
+        <h3>What Should I Do If an Employee Keeps Calling in Sick?</h3>
+        <p>How to manage repeated sickness absence fairly — policies, return-to-work meetings and formal reviews.</p>
+        <a href="/employee-keeps-calling-in-sick-uk/" class="insight-link">Read article →</a>
+      </article>
+      <article class="insight-card">
+        <p class="insight-meta">HR Essentials · 8 Aug 2026</p>
+        <h3>Can I Dismiss an Employee During Their Probation Period?</h3>
+        <p>What UK small business owners need to know about probation, fair process and employment rights.</p>
+        <a href="/dismiss-employee-during-probation-uk/" class="insight-link">Read article →</a>
+      </article>
+    </div>
+    <p style="margin-top:28px;"><a href="/insights/" class="btn-outline" style="display:inline-flex;">View all insights</a></p>
+  </div>
+</section>
+
 <!-- AREAS COVERED -->
 <section class="location-section">
   <div class="section-inner">
@@ -1135,6 +1189,7 @@
         <p>Crawford Consultancy works with small businesses across Falkirk, Stirling and the wider Central Belt, offering support both on site and remotely.</p>
         <p>If you&rsquo;d prefer face-to-face support, I&rsquo;m happy to come out to your business. If remote support works better, that&rsquo;s absolutely fine too. Whether you need ongoing monthly support or help with a one-off piece of work, we can find an approach that works for you.</p>
         <p><strong>Remote support is also available for businesses further afield.</strong></p>
+        <p style="margin-top:18px;"><a href="/hr-consultant-falkirk/" style="color:var(--stone);font-weight:500;text-decoration:none;">HR support in Falkirk</a> · <a href="/hr-consultant-stirling/" style="color:var(--stone);font-weight:500;text-decoration:none;">HR support in Stirling</a> · <a href="/payroll-services-falkirk/" style="color:var(--stone);font-weight:500;text-decoration:none;">Payroll in Falkirk</a></p>
       </div>
     </div>
   </div>
@@ -1218,6 +1273,7 @@
         <h4>Areas</h4>
         <ul>
           <li><a href="/areas-covered/">Areas Covered</a></li>
+          <li><a href="/hr-consultant-falkirk/">HR Falkirk</a></li>
           <li><a href="/payroll-services-falkirk/">Payroll Falkirk</a></li>
           <li><a href="/hr-consultant-stirling/">HR Stirling</a></li>
           <li><a href="/payroll-services-stirling/">Payroll Stirling</a></li>
@@ -1228,6 +1284,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="/about/">About Us</a></li>
+          <li><a href="/insights/">Insights</a></li>
           <li><a href="/pricing/">Pricing</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
