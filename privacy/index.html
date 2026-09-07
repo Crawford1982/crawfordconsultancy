@@ -11,46 +11,16 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{--ink:#1a1f2e;--mid:#4a5568;--muted:#8896aa;--stone:#c8a96e;--cream:#faf9f7;--white:#ffffff;--border:#e4e2dc;}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;padding:100px 24px 120px;}
-    .wrap{max-width:720px;margin:0 auto;}
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,31,46,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,169,110,0.2);}
-    .nav-inner{max-width:1120px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;}
-    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
-    .logo-img{height:58px;width:58px;border-radius:50%;object-fit:cover;display:block;flex-shrink:0;box-shadow:0 0 0 2px rgba(219,185,120,0.9),0 0 0 5px rgba(200,169,110,0.28),0 0 22px rgba(200,169,110,0.38),0 4px 14px rgba(0,0,0,0.45);filter:brightness(1.07) saturate(1.06);}nav .nav-logo{padding:4px;border-radius:50%;background:radial-gradient(circle,rgba(245,239,227,0.22) 0%,rgba(245,239,227,0.08) 65%,transparent 100%);box-shadow:0 0 24px rgba(200,169,110,0.18);}nav .nav-logo .logo-img{height:64px;width:64px;}.nav-links{display:flex;gap:24px;list-style:none;}
-    .nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.88rem;}
-    .nav-links a:hover{color:var(--stone);}
-    h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:10px;line-height:1.2;}
-    .updated{font-size:0.82rem;color:var(--muted);margin-bottom:28px;}
-    h2{font-family:'Playfair Display',serif;font-size:1.25rem;margin:32px 0 12px;color:var(--ink);}
-    p,li{color:var(--mid);margin-bottom:14px;font-size:0.95rem;font-weight:300;}
-    ul{margin:0 0 16px 1.2rem;}
-    li{margin-bottom:8px;}
-    a{color:var(--stone);text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    footer{background:var(--ink);padding:40px 24px;margin-top:48px;text-align:center;}
-    footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
-    footer a{color:rgba(255,255,255,0.5);}
-    .skip-link{position:absolute;top:-100px;left:0;z-index:1001;padding:12px 24px;background:var(--stone);color:var(--ink);font-weight:600;font-size:0.9rem;text-decoration:none;border-radius:0 0 6px 0;transition:top 0.2s;}
-    .skip-link:focus{top:0;outline:2px solid var(--ink);outline-offset:2px;}
-    a:focus-visible,button:focus-visible{outline:2px solid var(--stone);outline-offset:2px;}
-    .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--ink);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.15);font-size:0.9rem;}
-    .cookie-banner.hidden{display:none;}
-    .cookie-banner a{color:var(--stone);}
-    .cookie-banner button{background:var(--stone);color:var(--ink);border:none;padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}
-    .cookie-actions{display:flex;gap:10px;flex-wrap:wrap;}
-    .cookie-btn-ghost{background:transparent;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.3);padding:8px 18px;border-radius:6px;font-weight:600;font-size:0.88rem;cursor:pointer;}
-    .cookie-btn-ghost:hover{border-color:var(--stone);color:var(--stone);}
-  </style>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site.css">
+  
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="/logo.png" alt="Crawford Consultancy" class="logo-img" width="64" height="64"></a>
+    <a href="/" class="nav-logo"><img src="/logo.png" alt="Crawford Consultancy" class="logo-img" width="64" height="64"><span class="nav-wordmark">Crawford Consultancy</span>
+    </a>
     <ul class="nav-links">
       <li><a href="/services/">Services</a></li>
       <li><a href="/about/">About</a></li>
@@ -154,6 +124,7 @@
     <button type="button" id="cookie-accept">Accept analytics</button>
   </div>
 </div>
-<script>(function(){var COOKIE='cc_analytics',GA_ID='G-EXKS1Y6D2Y';function get(n){var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)'));return m?m[2]:null;}function hide(b){if(b)b.classList.add('hidden');}function loadGA(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config',GA_ID);var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);}var banner=document.getElementById('cookie-banner'),accept=document.getElementById('cookie-accept'),reject=document.getElementById('cookie-reject');var choice=get(COOKIE);if(choice==='1'){hide(banner);loadGA();}else if(choice==='0'){hide(banner);}else{if(accept)accept.addEventListener('click',function(){document.cookie=COOKIE+'=1; path=/; max-age=31536000; SameSite=Lax';hide(banner);loadGA();});if(reject)reject.addEventListener('click',function(){document.cookie=COOKIE+'=0; path=/; max-age=31536000; SameSite=Lax';hide(banner);});}})();</script>
+
+<script src="/site.js" defer></script>
 </body>
 </html>
