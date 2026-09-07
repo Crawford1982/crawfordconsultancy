@@ -21,6 +21,14 @@
   --stone: var(--gold);
   --stone-bright: var(--gold-light);
   --stone-l: var(--gold-pale);
+
+  /* Light tile tints (navy / gold / white only) */
+  --tile-cream: #faf9f7;
+  --tile-gold: #f5efe3;
+  --tile-gold-warm: #f8f2e6;
+  --tile-gold-rich: #f0e8d8;
+  --tile-navy-whisper: #f3f4f7;
+  --tile-navy-soft: #eceef2;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1355,8 +1363,8 @@ h3.section-subtitle {
 /* Insights listing */
 .insights-groups { display: flex; flex-direction: column; gap: 28px; }
 .insight-group {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: var(--cream);
+  border: 1px solid rgba(200, 169, 110, 0.18);
   border-radius: var(--r);
   padding: 24px 24px 28px;
   box-shadow: 0 6px 24px rgba(26, 31, 46, 0.05);
@@ -1393,14 +1401,14 @@ h3.section-subtitle {
   gap: 24px;
 }
 .blog-card {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: var(--tile-cream);
+  border: 1px solid rgba(200, 169, 110, 0.22);
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 8px rgba(26, 31, 46, 0.04);
+  box-shadow: 0 4px 16px rgba(26, 31, 46, 0.06);
 }
 .blog-card::before {
   content: '';
@@ -1464,27 +1472,39 @@ h3.section-subtitle {
 }
 .blog-card .post-link:hover { color: var(--navy); }
 
+.insight-group.sage .blog-card:nth-child(odd) { background: var(--tile-cream); }
+.insight-group.sage .blog-card:nth-child(even) { background: var(--tile-gold); }
+.insight-group.amber .blog-card:nth-child(odd) { background: var(--tile-gold); }
+.insight-group.amber .blog-card:nth-child(even) { background: var(--tile-gold-warm); }
+.insight-group.blue .blog-card:nth-child(odd) { background: var(--tile-navy-whisper); }
+.insight-group.blue .blog-card:nth-child(even) { background: var(--tile-cream); }
+
 /* Pricing */
 .pricing-stack { display: flex; flex-direction: column; gap: 40px; }
 .pricing-card {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: var(--tile-cream);
+  border: 1px solid rgba(200, 169, 110, 0.22);
   border-radius: var(--r);
   padding: 40px 36px;
   border-top: 3px solid var(--gold);
+  box-shadow: 0 4px 20px rgba(26, 31, 46, 0.06);
 }
+.pricing-card.card-sage { background: var(--tile-cream); }
+.pricing-card.card-amber { background: var(--tile-gold); }
 .pricing-card.featured {
-  background: var(--navy);
-  border-color: var(--navy);
-  border-top-color: var(--gold-light);
-  color: var(--white);
+  background: var(--tile-gold-warm);
+  border-color: rgba(200, 169, 110, 0.35);
+  border-top: 4px solid var(--gold);
+  box-shadow: 0 8px 28px rgba(26, 31, 46, 0.08);
 }
+.pricing-card.card-blue { background: var(--tile-navy-whisper); }
+.pricing-card.card-rose { background: var(--tile-gold-rich); }
+.pricing-card.card-violet { background: var(--tile-navy-soft); }
 .pricing-card-head {
   margin-bottom: 28px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(200, 169, 110, 0.2);
 }
-.pricing-card.featured .pricing-card-head { border-bottom-color: rgba(255, 255, 255, 0.1); }
 .pricing-card h3 {
   font-size: 1.65rem;
   font-weight: 800;
@@ -1492,7 +1512,6 @@ h3.section-subtitle {
   margin-bottom: 10px;
   line-height: 1.2;
 }
-.pricing-card.featured h3 { color: var(--white); }
 .price-tag {
   font-size: 2rem;
   font-weight: 800;
@@ -1501,7 +1520,6 @@ h3.section-subtitle {
   line-height: 1.2;
 }
 .price-note { font-size: 0.88rem; color: var(--muted); }
-.pricing-card.featured .price-note { color: rgba(255, 255, 255, 0.45); }
 .tagline {
   font-size: 0.95rem;
   color: var(--mid);
@@ -1509,7 +1527,6 @@ h3.section-subtitle {
   max-width: 620px;
   line-height: 1.65;
 }
-.pricing-card.featured .tagline { color: rgba(255, 255, 255, 0.55); }
 .subsection-title {
   font-size: 0.82rem;
   font-weight: 700;
@@ -1527,15 +1544,12 @@ h3.section-subtitle {
   color: var(--navy);
   margin-bottom: 6px;
 }
-.pricing-card.featured .check-item strong,
-.pricing-card.featured .check-item .check-label { color: var(--white); }
 .check-item p {
   font-size: 0.88rem;
   color: var(--mid);
   line-height: 1.65;
   margin: 0;
 }
-.pricing-card.featured .check-item p { color: rgba(255, 255, 255, 0.55); }
 .retainer-pricing-panel {
   margin-top: 16px;
   background: var(--white);
