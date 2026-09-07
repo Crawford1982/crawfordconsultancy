@@ -1102,6 +1102,15 @@ h2.title {
 }
 .prose p:last-child { margin-bottom: 0; }
 .prose strong { color: var(--navy); }
+.prose .service-page-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+}
+.prose .service-page-link:hover { color: var(--navy); }
 .prose ul {
   list-style: none;
   margin: 16px 0 0;
@@ -1227,6 +1236,42 @@ h3.section-subtitle {
   margin: 28px 0 12px;
 }
 .list-label { font-weight: 600; color: var(--navy); font-size: 0.92rem; margin: 8px 0 4px; }
+.partner-note {
+  margin-top: 28px;
+  padding: 24px 26px;
+  background: var(--gold-pale);
+  border: 1px solid rgba(200, 169, 110, 0.25);
+  border-radius: var(--r);
+  border-left: 4px solid var(--gold);
+}
+.partner-note p {
+  color: var(--mid);
+  line-height: 1.75;
+  font-size: 0.94rem;
+  margin-bottom: 0;
+}
+.partner-note ul {
+  list-style: none;
+  margin: 8px 0 0;
+}
+.partner-note ul li {
+  color: var(--mid);
+  line-height: 1.75;
+  font-size: 0.94rem;
+  padding: 6px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.partner-note ul li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
 
 /* Article */
 .article-panel {
