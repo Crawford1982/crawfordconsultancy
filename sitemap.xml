@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://crawfordconsultancy.co.uk/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/services/</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/recruitment-support/</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/about/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/pricing/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/contact/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/areas-covered/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/hr-consultant-falkirk/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/hr-consultant-stirling/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/hr-consultant-grangemouth/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/payroll-services-falkirk/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/payroll-services-stirling/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Core pages -->
+  <url><loc>https://crawfordconsultancy.co.uk/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/services/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/recruitment-support/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/about/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/pricing/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/contact/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/areas-covered/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/privacy/</loc><lastmod>2026-03-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+
+  <!-- Location & service landing pages -->
+  <url><loc>https://crawfordconsultancy.co.uk/hr-consultant-falkirk/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/hr-consultant-stirling/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/hr-consultant-grangemouth/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/payroll-services-falkirk/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/payroll-services-stirling/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Insights hub -->
   <url><loc>https://crawfordconsultancy.co.uk/insights/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+
+  <!-- Insight articles: Business Support -->
   <url><loc>https://crawfordconsultancy.co.uk/business-ready-for-growth-uk/</loc><lastmod>2026-09-10</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/payroll-mistake-what-to-do-uk/</loc><lastmod>2026-09-03</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://crawfordconsultancy.co.uk/could-business-run-without-you-uk/</loc><lastmod>2026-08-26</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/hiring-your-first-employee-uk/</loc><lastmod>2026-07-21</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+
+  <!-- Insight articles: Payroll -->
+  <url><loc>https://crawfordconsultancy.co.uk/payroll-mistake-what-to-do-uk/</loc><lastmod>2026-09-03</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://crawfordconsultancy.co.uk/cost-of-employing-someone-uk/</loc><lastmod>2026-08-21</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://crawfordconsultancy.co.uk/register-as-employer-hmrc-uk/</loc><lastmod>2026-07-29</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+
+  <!-- Insight articles: HR Essentials -->
   <url><loc>https://crawfordconsultancy.co.uk/employee-keeps-calling-in-sick-uk/</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://crawfordconsultancy.co.uk/dismiss-employee-during-probation-uk/</loc><lastmod>2026-08-08</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/register-as-employer-hmrc-uk/</loc><lastmod>2026-07-29</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/hiring-your-first-employee-uk/</loc><lastmod>2026-07-21</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://crawfordconsultancy.co.uk/do-i-need-an-employee-handbook-uk/</loc><lastmod>2026-07-13</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://crawfordconsultancy.co.uk/privacy/</loc><lastmod>2026-03-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
 </urlset>
