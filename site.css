@@ -1376,6 +1376,86 @@ h3.section-subtitle {
   flex-shrink: 0;
   margin-top: 10px;
 }
+
+/* Privacy policy — structured tables instead of stacked list panels */
+.policy-prose ul:not(.policy-simple-list) {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 12px 0 20px;
+}
+.policy-prose ul:not(.policy-simple-list) li {
+  display: list-item;
+  list-style: disc;
+  margin-left: 1.25rem;
+  padding: 4px 0;
+  border-bottom: none;
+}
+.policy-prose ul:not(.policy-simple-list) li::before { display: none; }
+.policy-prose h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 24px 0 10px;
+}
+.policy-table-wrap {
+  overflow-x: auto;
+  margin: 16px 0 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 16px rgba(26, 31, 46, 0.04);
+}
+.policy-table {
+  width: 100%;
+  min-width: 280px;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+.policy-table thead th {
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+.policy-table tbody th {
+  width: 32%;
+  min-width: 140px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--navy);
+  font-weight: 600;
+  text-align: left;
+  vertical-align: top;
+  background: var(--cream);
+}
+.policy-table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--mid);
+  line-height: 1.65;
+  vertical-align: top;
+}
+.policy-table tbody tr:last-child th,
+.policy-table tbody tr:last-child td { border-bottom: none; }
+.policy-table tbody tr:nth-child(even) td { background: var(--gold-pale); }
+.policy-table tbody tr:nth-child(even) th { background: #f5f0e8; }
+.policy-contact-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 20px 22px;
+  margin: 16px 0 0;
+  line-height: 1.75;
+  color: var(--mid);
+}
+.policy-contact-card strong { color: var(--navy); }
+
 .answer-box {
   background: var(--gold-pale);
   border: 1px solid rgba(200, 169, 110, 0.25);
