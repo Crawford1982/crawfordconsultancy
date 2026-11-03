@@ -1444,6 +1444,54 @@ h3.section-subtitle {
 .policy-table tbody tr:last-child td { border-bottom: none; }
 .policy-table tbody tr:nth-child(even) td { background: var(--gold-pale); }
 .policy-table tbody tr:nth-child(even) th { background: #f5f0e8; }
+.policy-table.policy-table-compact {
+  table-layout: fixed;
+  font-size: 0.88rem;
+}
+.policy-table-compact thead th {
+  padding: 9px 12px;
+  font-size: 0.72rem;
+}
+.policy-table-compact tbody th {
+  width: 30%;
+  min-width: 0;
+  padding: 10px 12px;
+  line-height: 1.35;
+  font-size: 0.88rem;
+}
+.policy-table-compact tbody td {
+  padding: 10px 12px;
+  line-height: 1.45;
+  font-size: 0.88rem;
+}
+.policy-table-compact tbody tr:nth-child(even) th { background: #f3ede4; }
+@media (max-width: 520px) {
+  .policy-table-compact thead { display: none; }
+  .policy-table-compact,
+  .policy-table-compact tbody,
+  .policy-table-compact tr,
+  .policy-table-compact th,
+  .policy-table-compact td { display: block; width: 100%; }
+  .policy-table-compact tbody tr {
+    border-bottom: 1px solid var(--border);
+    padding: 4px 0 10px;
+  }
+  .policy-table-compact tbody tr:last-child { border-bottom: none; }
+  .policy-table-compact tbody th {
+    background: none;
+    border-bottom: none;
+    padding: 10px 12px 4px;
+    color: var(--navy);
+  }
+  .policy-table-compact tbody td {
+    border-bottom: none;
+    padding: 0 12px 8px;
+    background: none !important;
+  }
+  .policy-table-compact tbody td::before {
+    content: none;
+  }
+}
 .policy-contact-card {
   background: var(--cream);
   border: 1px solid var(--border);
