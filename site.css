@@ -1499,6 +1499,49 @@ h3.section-subtitle {
 }
 .policy-contact-card strong { color: var(--navy); }
 
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 56px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .sitemap-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.sitemap-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--navy);
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold-pale);
+}
+.sitemap-col .sitemap-heading:not(:first-child) { margin-top: 28px; }
+.sitemap-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sitemap-list li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--border);
+}
+.sitemap-list li:last-child { border-bottom: none; }
+.sitemap-list a {
+  display: block;
+  padding: 10px 0;
+  color: var(--mid);
+  text-decoration: none;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  transition: color 0.15s;
+}
+.sitemap-list a:hover { color: var(--gold); }
+
 .answer-box {
   background: var(--gold-pale);
   border: 1px solid rgba(200, 169, 110, 0.25);
